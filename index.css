@@ -97,13 +97,13 @@ td {
     height: 50px;
 }
 ul {
-    list-style-type: circle;
+    list-style-image: url('littlestar.png');  
 }
 li {
     padding: 4px;
 }
 li a {
-    padding: 0 1em;
+    padding: 0 5px;
     color: #545454;
     text-decoration: none;
 }
