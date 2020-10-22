@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Grandstander', cursive;
+    margin: 0;
+}
+
+/* Edição Cabeçalho */
+.cabecalho {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 2em;
+}
+.cabecalho .titulo, .cabecalho .titulo a {
+    display: flex;
+    align-items: center;
+}
+.cabecalho a {
+    padding: 0 1em;
+    color: #545454;
+    text-decoration: none;
+}
+.cabecalho a:hover {
+    color: #FE0078;
+    text-decoration: underline;
+}
+.navegacao, .navegacao a {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+.cabecalho h1, .cabecalho h3 {
+    padding-left: 6px;
+}
+
+/* Edição Conteúdo */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.card {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 40px;
+    padding: 2em;
+    margin: 1em;
+}
+.card .card-cabecalho {
+    padding-bottom: 1em;
+}
+table {
+    border-collapse: collapse;
+    width: 1138px;
+}
+tr:first-child {
+    font-weight: bold;
+}
+td:first-child {
+    font-weight: bold;
+}
+td {
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: 10px;
+}
+.card .card-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+    text-align: center;
+    padding-top: 2em;
+}
+.card .card-rodape h3 {
+    padding: 0 1em;
+}
+.card .card-rodape img {
+    width: 50px;
+    height: 50px;
+}
+ul {
+    list-style-type: circle;
+}
+li {
+    padding: 4px;
+}
+li a {
+    padding: 0 1em;
+    color: #545454;
+    text-decoration: none;
+}
+li a:hover {
+    color: #FE0078;
+    text-decoration: underline;
+}
