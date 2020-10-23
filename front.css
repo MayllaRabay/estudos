@@ -51,10 +51,11 @@ img {
     align-items: center;
     margin: 30px;
 }
+/* Edição Conteúdo-Cards */
 .card {
     display: flex;
     height: fit-content;
-    width: fit-content;
+    max-width: 1200px;
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
@@ -63,9 +64,32 @@ img {
     padding: 2em;
     margin: 1em;
 }
-.card .card-cabecalho {
-    padding-bottom: 1em;
+.card .card-cabecalho, .card h3 {
+    padding-bottom: 25px;
 }
+
+/* Edição Conteúdo-Card 1 */
+.card-conteudo .pilares-web img {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 40px;
+}
+.pilares-web {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+ul {
+    list-style-type: square;
+}
+li {
+    padding-bottom: 6px;
+}
+
+/* Edição Tabelas */
 table {
     border-collapse: collapse;
     width: 1138px;
