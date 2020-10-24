@@ -97,7 +97,7 @@
                 <div class="perguntas-sql">
                     <span style="color: #a71d5d">SELECT</span> * <span style="color: #a71d5d">FROM</span> <span style="color: darkgrey">nome da tabela</span>;
                 </div>
-                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * <span style="color: #a71d5d">FROM</span> league_of_legends</h5>
+                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
                 <h4>Seleciona <span style="color:blueviolet">uma</span> coluna da tabela:</h4>
                 <div class="perguntas-sql">
                     <span style="color: #a71d5d">SELECT</span> 
@@ -105,7 +105,7 @@
                     <span style="color: #a71d5d">FROM</span> 
                     <span style="color: darkgrey">nome da tabela</span>;
                 </div>
-                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao <span style="color: #a71d5d">FROM</span> league_of_legends</h5>
+                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
                 <h4>Seleciona algo da tabela com uma <span style="color:blueviolet">condição</span></h4>
                 <div class="perguntas-sql">
                     <span style="color: #a71d5d">SELECT</span> 
@@ -115,7 +115,16 @@
                     <span style="color: #a71d5d">WHERE</span> 
                     <span style="color: darkgrey">condição</span>;
                 </div>
-                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao <span style="color: #a71d5d">FROM</span> league_of_legends <span style="color: #a71d5d">WHERE</span> rota = mid</h5>
+                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao <span style="color: #a71d5d">FROM</span> league_of_legends <span style="color: #a71d5d">WHERE</span> rota = 'mid';</h5>
+
+                <h4><span style="color:blueviolet">Insere</span> uma nova linha ou novo registro na tabela:</h4>
+                <div class="perguntas-sql">
+                    <span style="color: #a71d5d">INSERT INTO</span> 
+                    <span style="color: darkgrey">nome da tabela (coluna 1, coluna 2, coluna 3)</span> 
+                    <span style="color: #a71d5d">VALUES</span> 
+                    <span style="color: darkgrey">(valor da coluna 1, valor da coluna 2, valor da coluna 3)</span>;
+                </div>
+                <h5>Exemplo: <span style="color: #a71d5d">INSERT INTO</span> league_of_legends (campeao, rota, preco) <span style="color: #a71d5d">VALUES</span> ('Garen', 'top', 980); </h5>
             </div>
         </div>
     </div>
