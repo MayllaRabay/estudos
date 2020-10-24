@@ -48,11 +48,56 @@ img {
 .conteudo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 30px;
 }
-.conteudo img{
-    height: 300px;
-    width: 380px;
+/* Edição Conteúdo-Cards */
+.card {
+    display: flex;
+    height: fit-content;
+    max-width: 1200px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 40px;
     padding: 2em;
+    margin: 1em;
+}
+.card .card-cabecalho, .card h3 {
+    padding-bottom: 25px;
+}
+
+/* Edição Conteúdo-Card O que é Back-end */
+h3 {
+    padding-top: 20px;
+}
+.card-conteudo .pilares-banco img {
+    display: flex;
+    width: 400px;
+    height: 237px;
+    padding-right: 40px;
+}
+.pilares-banco {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+li {
+    padding-bottom: 6px;
+}
+
+/* Edição Conteúdo-Card Linguagem SQL */
+.perguntas-sql {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 1em 2em;
+}
+h4 {
+    padding-bottom: 3px;
+}
+h5 {
+    padding:3px 0 30px 0;
 }

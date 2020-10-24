@@ -36,8 +36,88 @@
     </div>
 
     <div class="conteudo">
-        <img src="escavadeira.png">
-        <h1>Estamos trabalhando nessa página!</h1>
+        <div class="card">
+            <div class="card-cabecalho">
+                <h2>O que o Back-End faz?</h2>
+            </div>
+            <div class="card-conteudo">
+                <ul>
+                    <li>Atua no lado do servidor, <strong>não</strong> tem contato direto com o usuário</li>
+                    <li>Cuida da maior parte da regra de negócio</li>
+                    <li>Manipula <strong>dados</strong> do usuário</li>
+                    <li>Conecta e manipula <strong>banco de dados</strong></li>
+                    <li>Envia e recebe informações</li>
+                    <li>Tem seus códigos executados pelo <strong>servidor</strong></li>
+                </ul>
+                <div class="pilares-banco">
+                    <img src="banco-dados.jpg">
+                    <div class="pilares-banco-texto">
+                        <h3> Pilares do Banco de Dados</h3>
+                        <ul>
+                            <li><span style="color:blueviolet; font-weight: bold">Integridade de informações</span></li>
+                            <ul>
+                                <li>Verdade única</li>
+                                <li>Regras para manter sua consistência</li>
+                                <li>Segurança de não ter dados duplicados</li>
+                            </ul>
+                            <li><span style="color:blueviolet; font-weight: bold">Escalabilidade</span></li>
+                            <ul>
+                                <li>Facilidade em lidar com grandes quantidades de dados</li>
+                                <li>Performance semelhante entre 300 registros e 900 mil registros</li>
+                            </ul>
+                            <li><span style="color:blueviolet; font-weight: bold">Segurança e padronização de acesso</span></li>
+                            <ul>
+                                <li>Sabe-se quem e quando algo foi adicionado, modificado ou deletado do banco de dados</li>
+                                <li>Podemos nos comunicar com diversos bancos de dados da mesma forma</li>
+                            </ul>
+                            <li><span style="color:blueviolet; font-weight: bold">Trabalho em Equipe</span></li>
+                            <ul>
+                                <li>Permite manipulação e comunicação simultaneamente</li>
+                                <li>Facilidade de acesso em diversos pontos independentes</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <h3>Elementos do banco de dados</h3>
+                <ul>
+                    <li><span style="color:blueviolet">Arquivos</span></li>
+                    <li><span style="color:blueviolet">BD:</span> sistema gerenciador do banco de dados, software responsável por guardar dados e definir quais informações entram e quais saem</li>
+                    <li><span style="color:blueviolet">SQL:</span> Structured Query Language ou Linguagem de Consulta Estruturada, é uma <strong>linguagem de comunicação</strong> que permite que façamos perguntas e afirmações para o Banco de Dados</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-cabecalho">
+                <h2>Linguagem SQL na prática</h2>
+            </div>
+            <div class="card-conteudo">
+                <h4>Seleciona <span style="color:blueviolet">todas</span> as colunas da tabela:</h4>
+                <div class="perguntas-sql">
+                    <span style="color: #a71d5d">SELECT</span> * <span style="color: #a71d5d">FROM</span> <span style="color: darkgrey">nome da tabela</span>;
+                </div>
+                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * <span style="color: #a71d5d">FROM</span> league_of_legends</h5>
+                <h4>Seleciona <span style="color:blueviolet">uma</span> coluna da tabela:</h4>
+                <div class="perguntas-sql">
+                    <span style="color: #a71d5d">SELECT</span> 
+                    <span style="color: darkgrey">nome da coluna</span> 
+                    <span style="color: #a71d5d">FROM</span> 
+                    <span style="color: darkgrey">nome da tabela</span>;
+                </div>
+                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao <span style="color: #a71d5d">FROM</span> league_of_legends</h5>
+                <h4>Seleciona algo da tabela com uma <span style="color:blueviolet">condição</span></h4>
+                <div class="perguntas-sql">
+                    <span style="color: #a71d5d">SELECT</span> 
+                    <span style="color: darkgrey">nome(s) da coluna(s)</span> 
+                    <span style="color: #a71d5d">FROM</span> 
+                    <span style="color: darkgrey">nome da tabela</span> 
+                    <span style="color: #a71d5d">WHERE</span> 
+                    <span style="color: darkgrey">condição</span>;
+                </div>
+                <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao <span style="color: #a71d5d">FROM</span> league_of_legends <span style="color: #a71d5d">WHERE</span> rota = mid</h5>
+            </div>
+        </div>
     </div>
 </body>
 </html>
