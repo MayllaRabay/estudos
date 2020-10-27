@@ -51,6 +51,14 @@ img {
     align-items: center;
     margin: 30px;
 }
+.texto-importante {
+    color:blueviolet;
+    font-weight: bold;
+}
+hr {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 /* Edição Conteúdo-Cards */
 .card {
     display: flex;
@@ -68,32 +76,44 @@ img {
     padding-bottom: 25px;
 }
 
-/* Edição Conteúdo-Card O que é Back-end */
+/* Edição Conteúdo-Card "O que é Back-end" */
 h3 {
     padding-top: 20px;
 }
-.card-conteudo .pilares-banco img {
+.card-conteudo .conteudo-parte-1-img img {
     display: flex;
-    width: 400px;
-    height: 237px;
-    padding-right: 40px;
+    width: 380px;
+    height: 280px;
+    position: absolute;
+    top: 150px;
+    right: 450px;
 }
 .pilares-banco {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    align-content: top;
+    align-items: top;
     padding-top: 20px;
+    position: relative;
+}
+.pilares-banco-texto {
+    max-width: 600px;
+}
+.conteudo-parte-1 {
+    display: flex;
+    align-content: top;
+    align-items: top;
+    padding-bottom: 30px;
 }
 li {
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
 
-/* Edição Conteúdo-Card Linguagem SQL */
+/* Edição Conteúdo-Card "Linguagem SQL" */
 .perguntas-sql {
     display: block;
     background-color: #f7f7f7;
-    padding: 1em 2em;
+    padding: 16px 30px;
 }
 h4 {
     padding-bottom: 3px;
