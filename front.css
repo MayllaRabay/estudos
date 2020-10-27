@@ -39,6 +39,7 @@ img {
     display: flex;
     width: 70px;
     height: 70px;
+    padding-right: 8px;
 }
 .cabecalho h1, .cabecalho h3 {
     padding-left: 6px;
@@ -51,6 +52,23 @@ img {
     align-items: center;
     margin: 30px;
 }
+.texto-importante {
+    color:blueviolet;
+    font-weight: bold;
+}
+.tipo-html {
+    display: block; 
+    padding: 10px 16px 10px 16px; 
+    margin: -3px; 
+    border: 1px solid lightgrey; 
+    border-radius: 4px;
+}
+.valor-css {
+    padding: 4px; 
+    border: 1px solid lightgrey; 
+    border-radius: 4px;
+}
+
 /* Edição Conteúdo-Cards */
 .card {
     display: flex;
@@ -68,7 +86,7 @@ img {
     padding-bottom: 25px;
 }
 
-/* Edição Conteúdo-Card 1 */
+/* Edição Conteúdo-Card "O que Front-End faz" */
 .card-conteudo .pilares-web img {
     display: flex;
     width: fit-content;

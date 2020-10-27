@@ -35,10 +35,11 @@
     flex: 0 0 auto;
     align-items: center;
 }
-img {
+.cabecalho img {
     display: flex;
     width: 70px;
     height: 70px;
+    padding-right: 8px;
 }
 .cabecalho h1, .cabecalho h3 {
     padding-left: 6px;
@@ -51,6 +52,8 @@ img {
     align-items: center;
     margin: 30px;
 }
+
+/* Edição Conteúdo-Cards */
 .card {
     display: flex;
     height: fit-content;
@@ -66,8 +69,24 @@ img {
 .card .card-cabecalho {
     padding-bottom: 1em;
 }
+.card .card-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+    text-align: center;
+    padding-top: 2em;
+}
+.card .card-rodape h3 {
+    padding: 0 1em;
+}
+img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
 
-/* Edição Tabelas */
+/* Edição Tabela Horários */
 table {
     border-collapse: collapse;
     width: 1138px;
@@ -83,23 +102,8 @@ td {
     text-align: center;
     padding: 10px;
 }
-.card .card-rodape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: blueviolet;
-    text-align: center;
-    padding-top: 2em;
-}
-.card .card-rodape h3 {
-    padding: 0 1em;
-}
-.card .card-rodape img {
-    width: 50px;
-    height: 50px;
-}
 
-/* Edição Listas */
+/* Edição Lista de Ferramentas */
 ul {
     list-style-image: url('littlestar.png');
 }

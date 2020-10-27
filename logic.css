@@ -39,6 +39,7 @@ img {
     display: flex;
     width: 70px;
     height: 70px;
+    padding-right: 8px;
 }
 .cabecalho h1, .cabecalho h3 {
     padding-left: 6px;
