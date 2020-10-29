@@ -74,12 +74,12 @@ li {
 .card, .card-1 {
     display: flex;
     height: fit-content;
-    max-width: 1200px;
+    width: 1200px;
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 2em;
     margin: 1em;
 }
@@ -124,4 +124,17 @@ li {
     display: block;
     background-color: #f7f7f7;
     padding: 16px 30px;
+}
+.informacoes-lado-a-lado {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.informacoes-lado-a-lado li ul {
+    padding-right: 90px;
+
+}
+.lista {
+    padding-top: 8px;
+    min-width: 300px;
 }
