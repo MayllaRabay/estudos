@@ -32,10 +32,9 @@
 }
 .navegacao, .navegacao a {
     display: flex;
-    flex: 0 0 auto;
     align-items: center;
 }
-img {
+.cabecalho .titulo a img, .cabecalho .navegacao a img {
     display: flex;
     width: 70px;
     height: 70px;
@@ -67,13 +66,14 @@ img {
     padding: 4px; 
     border: 1px solid lightgrey; 
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 /* Edição Conteúdo-Cards */
 .card {
     display: flex;
     height: fit-content;
-    width: 1200px;
+    max-width: fit-content;
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
@@ -107,7 +107,7 @@ li {
 /* Edição Tabelas */
 table {
     border-collapse: collapse;
-    width: 1138px;
+    width: fit-content;
 }
 tr:first-child {
     font-weight: bold;
