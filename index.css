@@ -3,14 +3,6 @@
     font-family: 'Grandstander', cursive;
     margin: 0;
 }
-@media only screen and (max-device-width: 1440px) {
-    .cabecalho {
-        width: 600px;
-    }
-    .card {
-        width: 600px;
-    }
-}
 /* Edição Cabeçalho */
 .cabecalho {
     display:flex;
