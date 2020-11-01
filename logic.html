@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="logic.css">
 </head>
+
 <body>
     <div class="cabecalho">
         <div class="titulo">
@@ -36,8 +38,60 @@
     </div>
 
     <div class="conteudo">
-        <img src="escavadeira.png">
-        <h1>Estamos trabalhando nessa página!</h1>
+        <div class="card">
+            <div class="card-cabecalho">
+                <h2>Rápida introdução à Ciência da Computação</h2>
+            </div>
+            <div class="card-conteudo">
+                <ul>
+                    <li>É sobre resolver problemas usando um computador!</li>
+                    <li>O computador precisa armazenar as informações (os dados de entrada e saída), mas como?
+                        Usando <span class="texto-importante">memória</span>! A memória do computador tem infinitos
+                        transitores, que podem estar ligados ou desligados:</li>
+                </ul>
+                <div class="imagem-bits">
+                    <img src="bits.jpg">
+                </div>
+                <h4>1 Giga Byte = 1 trilhão de bytes = 8 trilhões de bits (transitores)</h4>
+
+                <h3>Sistema Binário</h3>
+                <ul>
+                    <li>A arte de escrever qualquer número usando apenas 1 e 0:</li>
+                    <div class="imagem-binario">
+                        <img src="binario.png">
+                    </div>
+                    <li>Podemos guardar <strong>letras</strong> usando a <strong>tabela ASCII</strong>, que atribui cada
+                        letra com um número, por exemplo:
+                        a letra A é representada mundialmente pelo número 65 (01000001 em binário)</li>
+                    <li>Para guardar uma <strong>imagem</strong> usamos o <strong>sistema RGB</strong>:
+                        <ul>
+                            <li>Cada pixel contém 3 leds nas cores <span style="color: red;">vermelho</span>, <span
+                                    style="color: green;">verde</span> e <span style="color: blue;">azul</span></li>
+                            <li>Dependendo de quanto cada led esteja aceso, exergaremos uma determinada cor.</li>
+                            <li>A intensidade de cada led vai de 0 a 255 e conseguimos guardar essas informações na
+                                memória do computador através do código binário. Com a junção de centenas a milhares de
+                                pixels, cada um com sua
+                                intensidade RGB, formamos uma imagem.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Linguagens de Programação</h3>
+                <ul>
+                    <li>O computador é uma máquina capaz de armazenar dados e ser instruída a seguir uma sequência de instruções automaticamente, mas o que isso significa?</li>
+                    <li>Quer dizer que o computador é capaz de <span class="texto-importante">executar algoritmos</span>:
+                        <ul>
+                            <li>Algoritmo é um passo a passo para resolver um problema;</li>
+                            <li>É aí que entra a linguagem de programação, é com ela que o computador consegue entender esse passo a passo.</li>
+                            <div class="imagem-linguagens">
+                                <img src="linguagens.png">
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
