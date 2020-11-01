@@ -7,7 +7,7 @@
 /* Edição Cabeçalho */
 .cabecalho {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     min-width: 900px;
     padding: 12px 24px;
