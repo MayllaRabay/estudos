@@ -72,6 +72,20 @@
 .card .card-cabecalho, .card h3 {
     padding-bottom: 25px;
 }
+.card-conteudo h3 {
+    padding-top: 20px;
+}
+h4 {
+    text-align: center;
+}
+li {
+    padding-bottom: 8px;
+}
+li ul li {
+    padding-top: 5px;
+}
+
+/* Edição Imagens - Card "Introdução à Ciência da Programação" */
 .imagem-bits img {
     display: block;
     margin: 0 auto;
@@ -90,19 +104,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 60%;
+    width: 55%;
+    height: 55%;
     padding: 20px 0;
 }
-.card-conteudo h3 {
-    padding-top: 20px;
-}
-h4 {
-    text-align: center;
-}
-li {
-    padding-bottom: 8px;
-}
-li ul li {
-    padding-top: 5px;
+.imagem-logica {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
 }

@@ -47,7 +47,9 @@
                     <li>É sobre resolver problemas usando um computador!</li>
                     <li>O computador precisa armazenar as informações (os dados de entrada e saída), mas como?
                         Usando <span class="texto-importante">memória</span>! A memória do computador tem infinitos
-                        transitores, que podem estar ligados ou desligados:</li>
+                        <strong>transitores</strong>, que podem estar ligados (representado pelo número 1) ou desligados
+                        (representado pelo número 0).</li>
+                    <li>Cada lâmpada abaixo representa um transitor:</li>
                 </ul>
                 <div class="imagem-bits">
                     <img src="bits.jpg">
@@ -64,11 +66,13 @@
                 <ul>
                     <li>Podemos guardar <strong>letras</strong> usando a <strong>tabela ASCII</strong>, que atribui cada
                         letra com um número, por exemplo:
-                        a letra A é representada mundialmente pelo número 65 (01000001 em binário)</li>
+                        a letra A é representada mundialmente pelo número 65 (01000001 em binário). Essa tabela
+                        eventualmente ficou pequena, temos letras com diversos acentos, símbolos, até emojis são
+                        guardados em uma nova tabela chamada</li>
                     <li>Para guardar uma <strong>imagem</strong> usamos o <strong>sistema RGB</strong>:
                         <ul>
                             <li>Cada pixel contém 3 leds nas cores <span style="color: red;">vermelho</span>, <span
-                                    style="color: green;">verde</span> e <span style="color: blue;">azul</span></li>
+                                    style="color: green;">verde</span> e <span style="color: blue;">azul</span>.</li>
                             <li>Dependendo de quanto cada led esteja aceso, exergaremos uma determinada cor.</li>
                             <li>A intensidade de cada led vai de 0 a 255 e conseguimos guardar essas informações na
                                 memória do computador através do código binário. Com a junção de centenas a milhares de
@@ -80,16 +84,38 @@
 
                 <h3>Linguagens de Programação</h3>
                 <ul>
-                    <li>O computador é uma máquina capaz de armazenar dados e ser instruída a seguir uma sequência de instruções automaticamente, mas o que isso significa?</li>
-                    <li>Quer dizer que o computador é capaz de <span class="texto-importante">executar algoritmos</span>:
+                    <li>O computador é uma máquina capaz de armazenar dados e ser instruída a seguir uma sequência de
+                        instruções automaticamente, mas o que isso significa?</li>
+                    <li>Quer dizer que o computador é capaz de <span class="texto-importante">executar
+                            algoritmos</span>:
                         <ul>
                             <li>Algoritmo é um passo a passo para resolver um problema;</li>
-                            <li>É aí que entra a linguagem de programação, é com ela que o computador consegue entender esse passo a passo.</li>
+                            <li>É aí que entra a linguagem de programação, é com ela que o computador consegue entender
+                                esse passo a passo.</li>
                         </ul>
                     </li>
                 </ul>
                 <div class="imagem-linguagens">
                     <img src="linguagens.png">
+                </div>
+                <ul>
+                    <ul>
+                        <li>Mas o computador não entendia apenas o código binário? Ele não consegue ler apenas 1 e
+                            0? Como ele vai entender essas linguagens de programação? É aí que entra os
+                            <strong>compiladores</strong>.</li>
+                        <li>Todo código, que nós desenvolvedores escrevemos em determinada linguagem de programação,
+                            é chamado de <span class="texto-importante">Código Fonte</span>. Esse código ainda não é
+                            compreendido pelo computador mas, uma vez <strong>compilado</strong>, nosso código torna-se
+                            um <span class="texto-importante">Código Executável</span> (não é exatamente os 1 e 0, mas é
+                            um código bem próximo ao que o computador entende)</li>
+                        <li>Excelente livro sobre como funciona os compiladores: "<strong>Compilers: Principles,
+                                Techniques and Tools</strong>" de Alfred V. Aho, Monica S. Lam, Ravi Sethi e Jeffrey D.
+                            Ullman.</li>
+                        <li>Resumo de tudo o que vimos:</li>
+                    </ul>
+                </ul>
+                <div class="imagem-logica">
+                    <img src="logica.png">
                 </div>
             </div>
         </div>
