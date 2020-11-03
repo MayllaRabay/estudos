@@ -102,8 +102,7 @@ li ul li {
 }
 .imagem-linguagens img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 55%;
     height: 55%;
     padding: 20px 0;
