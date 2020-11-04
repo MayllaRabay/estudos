@@ -496,14 +496,22 @@
                                             <span style="color: darkgrey">nome da coluna</span>
                                             <span style="color: #a71d5d">FROM</span>
                                             <span style="color: darkgrey">nome da tabela</span>
-                                            <span style="color: #a71d5d">GROUP BY</span>;
+                                            <span style="color: #a71d5d">GROUP BY</span>
+                                            <span style="color: darkgrey">nome da coluna</span>;
                                         </div>
                                         <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> rota
                                             <span style="color: #a71d5d">FROM</span> league_of_legends
                                             <span style="color: #a71d5d">GROUP BY</span> rota;<br><br>
                                             Temos 5 valores da coluna "rota" em nossa tabela: "top", "mid", "adc", "sup"
                                             e "jg". No caso do exemplo ele irá retornar apenas uma coluna com o nome
-                                            "rota" e os 5 valores em cada linha.
+                                            "rota" e os 5 valores em cada linha.<br><br>
+                                            <span class="texto-importante">Importante!</span> Toda coluna que
+                                            selecionarmos (depois de SELECT) precisa ser agrupada (depois de GROUP BY),
+                                            se tivermos uma query do tipo:<br>
+                                            <span style="color: #a71d5d">SELECT</span> rota, campeao
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">GROUP BY</span> rota;<br>
+                                            Isso retornará um erro, informando que a coluna "campeao" também precisa ser agrupada.
                                         </h5>
                                     </li>
                                 </ul>
