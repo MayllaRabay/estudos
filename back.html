@@ -46,12 +46,13 @@
                 <div class="conteudo-parte-1">
                     <div class="back">
                         <ul>
-                            <li>Atua no lado do servidor, <strong>não</strong> tem contato direto com o usuário</li>
-                            <li>Cuida da maior parte da regra de negócio</li>
-                            <li>Manipula <strong>dados</strong> do usuário</li>
-                            <li>Conecta e manipula <strong>banco de dados</strong></li>
-                            <li>Envia e recebe informações</li>
-                            <li>Tem seus códigos executados pelo <strong>servidor</strong></li>
+                            <li>Atua no lado do servidor, <strong>não</strong> tem contato direto com o usuário;</li>
+                            <li>Cuida da maior parte da regra de negócio;</li>
+                            <li>Manipula <strong>dados</strong> do usuário;</li>
+                            <li>Lida com programas que expõem <strong>APIs</strong> e manipulam <strong>banco de
+                                    dados</strong>;</li>
+                            <li>Recebe pedidos (<strong>requests</strong>) da página web e envia informações;</li>
+                            <li>Tem seus códigos executados pelo <strong>servidor</strong>.</li>
                         </ul>
                     </div>
                     <div class="banco-dados">
@@ -532,11 +533,32 @@
                                         <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> rota,
                                             <span style="color: #a71d5d">COUNT(</span> rota
                                             <span style="color: #a71d5d">) FROM</span> league_of_legends
-                                            <span style="color: #a71d5d">GROUP BY</span> rota;<br>
+                                            <span style="color: #a71d5d">GROUP BY</span> rota;<br><br>
                                             Nesse caso ele irá retornar, além da coluna com o nome "rota" e os 5 valores
                                             em cada linha, uma segunda coluna com o nome "count" (podemos renomeá-la
                                             usando a palavra reservada <span class="texto-importante">as</span>), com a
                                             contagem de linhas de cada valor da coluna "rota".
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4>Retorna dados <span class="texto-importante">distintos</span> de uma
+                                            determinada coluna (o ORDER BY não seria necessário, ele apenas ordena os
+                                            dados distintos que coletamos):</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT DISTINCT</span>
+                                            <span style="color: darkgrey">nome da coluna</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">ORDER BY</span>
+                                            <span style="color: darkgrey">nome da coluna;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT DISTINCT</span> preco
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">ORDER BY</span> preco;<br><br>
+                                            Em nossa tabela "league_of_legends" temos diversos campeões com o mesmo
+                                            preço. Ao usarmos DISTINCT, em vez de retornar uma tabela com várias linhas
+                                            do mesmo
+                                            preço, apareceria apenas uma linha de cada preço distinto.
                                         </h5>
                                     </li>
                                 </ul>
@@ -564,8 +586,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li>Tipos de conteúdo:
-                        <div class="tipos-conteudo">
+                    <li>Tipos de dados:
+                        <div class="tipos-dados">
                             <ul>
                                 <li><span class="texto-importante">TEXT</span> - tipo textual, texto sem limites de
                                     caracteres.</li>
@@ -586,6 +608,49 @@
                         </div>
                     </li>
                 </div>
+                <ul>
+                    <li>
+                        <h4>O valor padrão que utilizamos no banco de dados é em <span
+                                class="texto-importante">centavos</span> (8 reais = 800 centavos). Para retornar o valor
+                            em <span class="texto-importante">reais</span> apenas dividimos por cem:</h4>
+                        <div class="perguntas-sql">
+                            <span style="color: #a71d5d">SELECT AVG(</span>
+                            <span style="color: darkgrey">nome da coluna</span>
+                            <span style="color: #a71d5d">)<span class="texto-importante">/100</span> FROM</span>
+                            <span style="color: darkgrey">nome da tabela</span>;
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        <h4>Porém o valor retornado quando dividimos por cem é do tipo <span
+                                class="texto-importante">Numeric</span> (um número preciso, com muitas casas decimais -
+                            ver <a href="https://www.postgresql.org/docs/9.6/datatype-numeric.html"
+                                target="_blank">Documentação - PostgreSQL 9.6</a>). Para retornar o valor com apenas
+                            <span class="texto-importante">duas casas decimais</span> usamos a palavra reservada
+                            <span class="texto-importante">TRUNC</span>:</h4>
+                        <div class="perguntas-sql">
+                            <span style="color: #a71d5d">SELECT <span class="texto-importante">TRUNC(</span>AVG(</span>
+                            <span style="color: darkgrey">nome da coluna</span>
+                            <span style="color: #a71d5d">)/100<span class="texto-importante">, 2)</span> FROM</span>
+                            <span style="color: darkgrey">nome da tabela</span>;
+                        </div>
+                        <h5><span class="texto-importante">Importante!</span> Na fórmula TRUNC(_,_) o valor antes da
+                            vírgula é o dado que queremos, e depois da vírgula é a quantidade de casas decimais
+                            que queremos que apareça, não precisa ser necessariamente 2.</h5>
+                    </li>
+                    <li>
+                        <h4>Para mudar o <span class="texto-importante">tipo</span> de um dado, usamos a seguinte regra:
+                        </h4>
+                        <div class="perguntas-sql">
+                            <span style="color: #a71d5d">SELECT AVG(</span>
+                            <span style="color: darkgrey">nome da coluna</span>
+                            <span style="color: #a71d5d">)<span class="texto-importante">::REAL</span> FROM</span>
+                            <span style="color: darkgrey">nome da tabela</span>;
+                        </div>
+                        <h5>Essa mudança é comum quando temos números no formato de string (texto) e queremos fazer
+                            operações, ou colocá-los em ordem crescente/decrescente.</h5>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
