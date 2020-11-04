@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="back.css">
 </head>
+
 <body>
     <div class="cabecalho">
         <div class="titulo">
@@ -55,7 +57,7 @@
                     <div class="banco-dados">
                         <img src="banco-dados.jpg">
                     </div>
-                </div>   
+                </div>
                 <div class="conteudo-parte-2">
                     <div class="pilares-banco">
                         <h3> Pilares do Banco de Dados</h3>
@@ -73,7 +75,8 @@
                             </ul>
                             <li><span class="texto-importante">Segurança e padronização de acesso</span></li>
                             <ul>
-                                <li>Sabe-se quem e quando algo foi adicionado, modificado ou deletado do banco de dados;</li>
+                                <li>Sabe-se quem e quando algo foi adicionado, modificado ou deletado do banco de dados;
+                                </li>
                                 <li>Podemos nos comunicar com diversos bancos de dados da mesma forma.</li>
                             </ul>
                             <li><span class="texto-importante">Trabalho em Equipe</span></li>
@@ -87,17 +90,19 @@
                         <h3>Elementos do banco de dados</h3>
                         <ul>
                             <li><span class="texto-importante">Arquivos</span></li>
-                            <li><span class="texto-importante">BD</span> 
+                            <li><span class="texto-importante">BD</span>
                                 <ul>
                                     <li>Sistema gerenciador do banco de dados;</li>
-                                    <li>Software responsável por guardar dados e definir quais informações entram e quais saem.</li>
-                                </ul> 
+                                    <li>Software responsável por guardar dados e definir quais informações entram e
+                                        quais saem.</li>
+                                </ul>
                             </li>
-                            <li><span class="texto-importante">SQL</span> 
+                            <li><span class="texto-importante">SQL</span>
                                 <ul>
                                     <li>Structured Query Language ou Linguagem de Consulta Estruturada;</li>
-                                    <li>É uma <strong>linguagem de comunicação</strong> que permite que façamos perguntas e afirmações para o Banco de Dados.</li>
-                                </ul> 
+                                    <li>É uma <strong>linguagem de comunicação</strong> que permite que façamos
+                                        perguntas e afirmações para o Banco de Dados.</li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -112,246 +117,445 @@
             <div class="card-conteudo">
                 <div class="card-conteudo-parte">
                     <ul>
-                        <li><h3>Linguagem de <span class="texto-importante">Definição</span> de Dados (DDL)</h3>
-                        <ul>
-                            <li>Data Definition Language;</li>
-                            <li>Usada para definir como será o formato do banco de dados e tabelas.</li>
-                            <br>
+                        <li>
+                            <h3>Linguagem de <span class="texto-importante">Definição</span> de Dados (DDL)</h3>
                             <ul>
-                                <li>
-                                    <h4><span class="texto-importante">Cria</span> um banco de dados:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">CREATE DATABASE</span> 
-                                        <span style="color: darkgrey">nome do banco de dados</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">CREATE DATABASE</span> rito_gomes;</h5>
-                                </li>
-                                <li>
-                                    <h4><span class="texto-importante">Destrói/derruba</span> um banco de dados:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">DROP DATABASE</span> 
-                                        <span style="color: darkgrey">nome do banco de dados</span>;
-                                    </div>
-                                     <h5>Exemplo: <span style="color: #a71d5d">DROP DATABASE</span> rito_gomes;</h5>
-                                </li>
-                                <li>
-                                    <h4><span class="texto-importante">Cria</span> uma tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">CREATE TABLE</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        (<span style="color: darkgrey">coluna TIPO</span>, 
-                                        <span style="color: darkgrey">coluna TIPO</span>, 
-                                        <span style="color: darkgrey">coluna TIPO</span>);
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">CREATE TABLE</span> league_of_legends (campeao TEXT, rota TEXT, preco INT);</h5>
-                                </li>
-                                <li>
-                                    <h4><span class="texto-importante">Destrói/derruba</span> uma tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">DROP TABLE</span> 
-                                        <span style="color: darkgrey">nome da tabela</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">DROP TABLE</span> league_of_legends;</h5>
-                                </li>
-                                <li>
-                                    <h4><span class="texto-importante">Remove</span> os registros de uma tabela <span class="texto-importante">sem deletá-la</span>:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">TRUNCATE TABLE</span> 
-                                        <span style="color: darkgrey">nome da tabela</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">TRUNCATE TABLE</span> league_of_legends;</h5>
-                                </li>
+                                <li>Data Definition Language;</li>
+                                <li>Usada para definir como será o formato do banco de dados e tabelas.</li>
+                                <br>
+                                <ul>
+                                    <li>
+                                        <h4><span class="texto-importante">Cria</span> um banco de dados:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">CREATE DATABASE</span>
+                                            <span style="color: darkgrey">nome do banco de dados</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">CREATE DATABASE</span> riot_games;
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Destrói/derruba</span> um banco de dados:
+                                        </h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">DROP DATABASE</span>
+                                            <span style="color: darkgrey">nome do banco de dados</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">DROP DATABASE</span> riot_games;</h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Cria</span> uma tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">CREATE TABLE</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            (<span style="color: darkgrey">coluna TIPO</span>,
+                                            <span style="color: darkgrey">coluna TIPO</span>,
+                                            <span style="color: darkgrey">coluna TIPO</span>);
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">CREATE TABLE</span> league_of_legends
+                                            (campeao TEXT, rota TEXT, preco INT);</h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Destrói/derruba</span> uma tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">DROP TABLE</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">DROP TABLE</span> league_of_legends;
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Remove</span> os registros de uma tabela
+                                            <span class="texto-importante">sem deletá-la</span>:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">TRUNCATE TABLE</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">TRUNCATE TABLE</span>
+                                            league_of_legends;</h5>
+                                    </li>
+                                </ul>
                             </ul>
-                        </ul>
                         </li>
                     </ul>
                 </div>
                 <hr>
                 <div class="card-conteudo-parte">
                     <ul>
-                        <li><h3>Linguagem de <span class="texto-importante">Manipulação</span> de Dados (DML)</h3>
-                        <ul>
-                            <li>Data Manipulation Language;</li>
-                            <li>Usada para inserir, atualizar e remover registros.</li>
-                            <br>
+                        <li>
+                            <h3>Linguagem de <span class="texto-importante">Manipulação</span> de Dados (DML)</h3>
                             <ul>
-                                <li>
-                                    <h4><span class="texto-importante">Insere</span> uma nova linha ou novo registro na tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">INSERT INTO</span> 
-                                        <span style="color: darkgrey">nome da tabela (coluna 1, coluna 2, coluna 3)</span> 
-                                        <span style="color: #a71d5d">VALUES</span> 
-                                        <span style="color: darkgrey">(valor da coluna 1, valor da coluna 2, valor da coluna 3)</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">INSERT INTO</span> league_of_legends (campeao, rota, preco) 
-                                        <span style="color: #a71d5d">VALUES</span> ('Garen', 'top', 6300);</h5>
-                                </li>
-                                <li>
-                                    <h4><span class="texto-importante">Atualiza</span> alguma linha ou registro da tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">UPDATE</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        <span style="color: #a71d5d">SET</span> 
-                                        <span style="color: darkgrey">o que será atualizado</span>
-                                        <span style="color: #a71d5d">WHERE</span> 
-                                        <span style="color: darkgrey">condição</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">UPDATE</span> league_of_legends 
-                                        <span style="color: #a71d5d">SET</span> preco = 4800 
-                                        <span style="color: #a71d5d">WHERE</span> campeao = 'Garen';</h5>
-                                </li>
-                                <li>
-                                    <h4><span class="texto-importante">Deleta</span> um registro da tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">DELETE FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        <span style="color: #a71d5d">WHERE</span> 
-                                        <span style="color: darkgrey">o que será deletado</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">DELETE FROM</span> league_of_legends 
-                                        <span style="color: #a71d5d">WHERE</span> campeao = 'Urf';</h5>
-                                </li>
+                                <li>Data Manipulation Language;</li>
+                                <li>Usada para inserir, atualizar e remover registros.</li>
+                                <br>
+                                <ul>
+                                    <li>
+                                        <h4><span class="texto-importante">Insere</span> uma nova linha ou novo registro
+                                            na tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">INSERT INTO</span>
+                                            <span style="color: darkgrey">nome da tabela (coluna 1, coluna 2, coluna
+                                                3)</span>
+                                            <span style="color: #a71d5d">VALUES</span>
+                                            <span style="color: darkgrey">(valor da coluna 1, valor da coluna 2, valor
+                                                da coluna 3)</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">INSERT INTO</span> league_of_legends
+                                            (campeao, rota, preco)
+                                            <span style="color: #a71d5d">VALUES</span> ('Garen', 'top', 6300);<br><br>
+                                            <span class="texto-importante">Importante!</span> Os valores são sempre
+                                            escritos em centavos, por exemplo 8 reais = 800
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Atualiza</span> alguma linha ou registro da
+                                            tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">UPDATE</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">SET</span>
+                                            <span style="color: darkgrey">o que será atualizado</span>
+                                            <span style="color: #a71d5d">WHERE</span>
+                                            <span style="color: darkgrey">condição</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">UPDATE</span> league_of_legends
+                                            <span style="color: #a71d5d">SET</span> preco = 4800
+                                            <span style="color: #a71d5d">WHERE</span> campeao = 'Garen';</h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Deleta</span> um registro da tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">DELETE FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">WHERE</span>
+                                            <span style="color: darkgrey">o que será deletado</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">DELETE FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">WHERE</span> campeao = 'Urf';</h5>
+                                    </li>
+                                </ul>
                             </ul>
-                        </ul>
                         </li>
                     </ul>
                 </div>
                 <hr>
                 <div class="card-conteudo-parte">
                     <ul>
-                        <li><h3>Linguagem de <span class="texto-importante">Consulta</span> de Dados (DQL)</h3>
-                        <ul>
-                            <li>Data Query Language;</li>
-                            <li>Usada para consultar dados;</li>
-                            <li>A mais importante de todas as sublinguagens.</li>
-                            <br>
+                        <li>
+                            <h3>Linguagem de <span class="texto-importante">Consulta</span> de Dados (DQL)</h3>
                             <ul>
-                                <li>
-                                    <h4>Seleciona <span class="texto-importante">todas</span> as colunas da tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">SELECT</span> * 
-                                        <span style="color: #a71d5d">FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
-                                </li>
-                                <li>
-                                    <h4>Seleciona <span class="texto-importante">uma</span> coluna da tabela:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">SELECT</span> 
-                                        <span style="color: darkgrey">nome da coluna</span> 
-                                        <span style="color: #a71d5d">FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
-                                </li>
-                                <li>
-                                    <h4>Seleciona algo da tabela com uma <span class="texto-importante">condição</span>:</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">SELECT</span> 
-                                        <span style="color: darkgrey">nome(s) da coluna(s)</span> 
-                                        <span style="color: #a71d5d">FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        <span style="color: #a71d5d">WHERE</span> 
-                                        <span style="color: darkgrey">condição</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends 
-                                        <span style="color: #a71d5d">WHERE</span> rota = 'mid';</h5>
-                                </li>
-                                <li>
-                                    <h4>Seleciona algo da tabela com <span class="texto-importante">mais de uma</span> condição (operador lógico <span class="texto-importante">E</span>):</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">SELECT</span> 
-                                        <span style="color: darkgrey">nome(s) da coluna(s)</span> 
-                                        <span style="color: #a71d5d">FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        <span style="color: #a71d5d">WHERE</span> 
-                                        <span style="color: darkgrey">condição</span>
-                                        <span style="color: #a71d5d">AND</span>
-                                        <span style="color: darkgrey">outra condição</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends 
-                                        <span style="color: #a71d5d">WHERE</span> rota = 'adc' 
-                                        <span style="color: #a71d5d">AND</span> campeao = 'Draven';</h5>
-                                </li>
-                                <li>
-                                    <h4>Seleciona algo da tabela com <span class="texto-importante">mais de uma</span> condição, porém <span class="texto-importante">negando-a</span> (negativa lógica <span class="texto-importante">NOT</span>):</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">SELECT</span> 
-                                        <span style="color: darkgrey">nome(s) da coluna(s)</span> 
-                                        <span style="color: #a71d5d">FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        <span style="color: #a71d5d">WHERE</span> 
-                                        <span style="color: darkgrey">condição</span>
-                                        <span style="color: #a71d5d">AND NOT</span>
-                                        <span style="color: darkgrey">outra condição</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends 
-                                        <span style="color: #a71d5d">WHERE</span> rota = 'mid' 
-                                        <span style="color: #a71d5d">AND NOT</span> campeao = 'Ahri';<br><br>
-                                    <span class="texto-importante">Importante!</span> Podemos negar duas condições ao mesmo tempo, usando parênteses:<br> 
-                                        Exemplo: <span style="color: #a71d5d">SELECT</span> * 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends 
-                                        <span style="color: #a71d5d">WHERE</span> rota = 'mid' 
-                                        <span style="color: #a71d5d">AND NOT</span> (campeao = 'Ahri' <span style="color: #a71d5d">AND</span> campeao = 'Syndra');</h5>
-                                </li>
-                                <li>
-                                    <h4>Seleciona algo da tabela <span class="texto-importante">juntando</span> duas (ou mais) condições (operador lógico <span class="texto-importante">OU</span>):</h4>
-                                    <div class="perguntas-sql">
-                                        <span style="color: #a71d5d">SELECT</span> 
-                                        <span style="color: darkgrey">nome(s) da coluna(s)</span> 
-                                        <span style="color: #a71d5d">FROM</span> 
-                                        <span style="color: darkgrey">nome da tabela</span> 
-                                        <span style="color: #a71d5d">WHERE</span> 
-                                        <span style="color: darkgrey">condição</span>
-                                        <span style="color: #a71d5d">OR</span>
-                                        <span style="color: darkgrey">outra condição somada</span>;
-                                    </div>
-                                    <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> * 
-                                        <span style="color: #a71d5d">FROM</span> league_of_legends 
-                                        <span style="color: #a71d5d">WHERE</span> rota = 'top' 
-                                        <span style="color: #a71d5d">OR</span> rota = 'sup';</h5>
-                                </li>
+                                <li>Data Query Language;</li>
+                                <li>Usada para consultar dados;</li>
+                                <li>A mais importante de todas as sublinguagens.</li>
+                                <br>
+                                <ul>
+                                    <li>
+                                        <h4>Seleciona <span class="texto-importante">todas</span> as colunas da tabela:
+                                        </h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Seleciona <span class="texto-importante">uma</span> coluna da tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome da coluna</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Seleciona algo da tabela com uma <span
+                                                class="texto-importante">condição</span>:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome(s) da(s) coluna(s)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">WHERE</span>
+                                            <span style="color: darkgrey">condição</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeao
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">WHERE</span> rota = 'mid';</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Seleciona algo da tabela com <span class="texto-importante">mais de
+                                                uma</span> condição (operador lógico <span
+                                                class="texto-importante">E</span>):</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome(s) da(s) coluna(s)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">WHERE</span>
+                                            <span style="color: darkgrey">condição</span>
+                                            <span style="color: #a71d5d">AND</span>
+                                            <span style="color: darkgrey">outra condição</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">WHERE</span> rota = 'adc'
+                                            <span style="color: #a71d5d">AND</span> campeao = 'Draven';</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Seleciona algo da tabela com <span class="texto-importante">mais de
+                                                uma</span> condição, porém <span
+                                                class="texto-importante">negando-a</span> (negativa lógica <span
+                                                class="texto-importante">NOT</span>):</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome(s) da(s) coluna(s)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">WHERE</span>
+                                            <span style="color: darkgrey">condição</span>
+                                            <span style="color: #a71d5d">AND NOT</span>
+                                            <span style="color: darkgrey">outra condição</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">WHERE</span> rota = 'mid'
+                                            <span style="color: #a71d5d">AND NOT</span> campeao = 'Ahri';<br><br>
+                                            <span class="texto-importante">Importante!</span> Podemos negar duas
+                                            condições ao mesmo tempo, usando parênteses:<br>
+                                            Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">WHERE</span> rota = 'mid'
+                                            <span style="color: #a71d5d">AND NOT</span>
+                                            <span class="texto-importante">(</span>campeao = 'Ahri' <span
+                                                style="color: #a71d5d">AND</span> campeao = 'Syndra'<span
+                                                class="texto-importante">)</span>;</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Seleciona algo da tabela <span class="texto-importante">juntando</span> duas
+                                            (ou mais) condições (operador lógico <span
+                                                class="texto-importante">OU</span>):</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome(s) da(s) coluna(s)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">WHERE</span>
+                                            <span style="color: darkgrey">condição</span>
+                                            <span style="color: #a71d5d">OR</span>
+                                            <span style="color: darkgrey">outra condição somada</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">WHERE</span> rota = 'top'
+                                            <span style="color: #a71d5d">OR</span> rota = 'sup';</h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Conta</span> quantas linhas existem na
+                                            tabela:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT COUNT(id) FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT COUNT(id) FROM</span>
+                                            league_of_legends</h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Soma</span> os valores de todos os campos de
+                                            uma determinada coluna:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT SUM</span>
+                                            <span style="color: darkgrey">(nome da coluna)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT SUM</span> (preco)
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Tira a <span class="texto-importante">média</span> dos valores de uma
+                                            determinada coluna:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT AVG</span>
+                                            <span style="color: darkgrey">(nome da coluna)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT AVG</span> (preco)
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends;</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Determina um <span class="texto-importante">limite</span> de contagem de
+                                            colunas:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">*</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">LIMIT</span>
+                                            <span style="color: darkgrey">número do limite</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">LIMIT</span> 50;<br><br>
+                                            No caso do exemplo ele irá retornar todos os dados da tabela da linha <span
+                                                class="texto-importante">0</span> até a linha <span
+                                                class="texto-importante">50</span>.</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Além de determinar um limite para a contagem, podemos especificar em qual
+                                            <span class="texto-importante">linha</span> a contagem <span
+                                                class="texto-importante">começa</span>:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">*</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">LIMIT</span>
+                                            <span style="color: darkgrey">número do limite</span>
+                                            <span style="color: #a71d5d">OFFSET</span>
+                                            <span style="color: darkgrey">número da linha inicial</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> *
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">LIMIT</span> 50
+                                            <span style="color: #a71d5d">OFFSET</span> 20;<br><br>
+                                            No caso do exemplo ele irá retornar todos os dados da tabela da linha <span
+                                                class="texto-importante">20</span> até a linha <span
+                                                class="texto-importante">50</span>.</h5>
+                                    </li>
+                                    <li>
+                                        <h4>Retorna o <span class="texto-importante">valor mínimo</span> de uma
+                                            determinada coluna:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT MIN</span>
+                                            <span style="color: darkgrey">(nome da coluna)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT MIN</span> (preco)
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends;
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4>Retorna o <span class="texto-importante">valor máximo</span> de uma
+                                            determinada coluna:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT MAX</span>
+                                            <span style="color: darkgrey">(nome da coluna)</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT MAX</span> (preco)
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends;
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Ordena</span> os dados de uma determinada
+                                            coluna (a forma padrão é <span class="texto-importante">crescente</span>,
+                                            não é necessário escrever o "ASC"):</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome da coluna</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">ORDER BY</span>
+                                            <span style="color: darkgrey">nome da coluna que você quer ordenar</span>
+                                            <span style="color: #a71d5d">ASC</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeoes
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">ORDER BY</span> campeoes;
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Ordena</span> os dados de uma determinada
+                                            coluna de forma <span class="texto-importante">decrescente</span>:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome da coluna</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">ORDER BY</span>
+                                            <span style="color: darkgrey">nome da coluna que você quer ordenar</span>
+                                            <span style="color: #a71d5d">DESC</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> campeoes
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">ORDER BY</span> campeoes
+                                            <span style="color: #a71d5d">DESC</span>;
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Agrupa</span> os dados de uma determinada
+                                            coluna:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome da coluna</span>
+                                            <span style="color: #a71d5d">FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">GROUP BY</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> rota
+                                            <span style="color: #a71d5d">FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">GROUP BY</span> rota;<br><br>
+                                            Temos 5 valores da coluna "rota" em nossa tabela: "top", "mid", "adc", "sup"
+                                            e "jg". No caso do exemplo ele irá retornar apenas uma coluna com o nome
+                                            "rota" e os 5 valores em cada linha.
+                                        </h5>
+                                    </li>
+                                </ul>
                             </ul>
-                            <div class="informacoes-lado-a-lado">
-                                <li>Operadores Relacionais:
-                                    <div class="operadores-relacionais">
-                                        <ul>
-                                            <li><span class="texto-importante">&lt</span> - Menor que</li>
-                                            <li><span class="texto-importante">&gt</span> - Maior que</li>
-                                            <li><span class="texto-importante">&lt=</span> - Menor ou igual a</li>
-                                            <li><span class="texto-importante">&gt=</span> - Maior ou igual a</li>
-                                            <li><span class="texto-importante">=</span> - Igual a</li>
-                                            <li><span class="texto-importante">&lt&gt</span> - Diferente de</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>Tipos de conteúdo:
-                                    <div class="tipos-conteudo">
-                                        <ul>
-                                            <li><span class="texto-importante">TEXT</span> - tipo textual, texto sem limites de caracteres.</li>
-                                            <li><span class="texto-importante">VARCHAR(__)</span> - tipo textual, texto <strong>com limite</strong> de caracteres, escreva o limite entre os parênteses.</li>
-                                            <li><span class="texto-importante">REAL</span> - tipo numérico, representa um número real (pode ser tanto inteiro quanto decimal).</li>
-                                            <li><span class="texto-importante">INT</span> - tipo numérico, representa apenas números reais <strong>inteiros</strong>.</li>
-                                            <li><span class="texto-importante">BOOLEAN</span> - tipo booleano, define se algo é verdadeiro ou falso, escreva assim: <span class="texto-importante">true</span> ou <span class="texto-importante">false</span>.</li>
-                                            <li><span class="texto-importante">DATE</span> - tipo de data, apenas dia, mês e ano, escreva assim: <span class="texto-importante">'YYYY-MM-DD'</span>.</li>
-                                            <li><span class="texto-importante">TIMESTAMP</span> - tipo de data, com dia, mês e ano, hora, minuto e segundo, escreva assim: <span class="texto-importante">'YYYY-MM-DD hh:mm:ss'</span>.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                        </ul>
                         </li>
                     </ul>
                 </div>
-
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-cabecalho">
+                <h2>Informações importantes</h2>
+            </div>
+            <div class="card-conteudo">
+                <div class="informacoes-lado-a-lado">
+                    <li>Operadores Relacionais:
+                        <div class="operadores-relacionais">
+                            <ul>
+                                <li><span class="texto-importante">&lt</span> - Menor que</li>
+                                <li><span class="texto-importante">&gt</span> - Maior que</li>
+                                <li><span class="texto-importante">&lt=</span> - Menor ou igual a</li>
+                                <li><span class="texto-importante">&gt=</span> - Maior ou igual a</li>
+                                <li><span class="texto-importante">=</span> - Igual a</li>
+                                <li><span class="texto-importante">&lt&gt</span> - Diferente de</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Tipos de conteúdo:
+                        <div class="tipos-conteudo">
+                            <ul>
+                                <li><span class="texto-importante">TEXT</span> - tipo textual, texto sem limites de
+                                    caracteres.</li>
+                                <li><span class="texto-importante">VARCHAR(__)</span> - tipo textual, texto <strong>com
+                                        limite</strong> de caracteres, escreva o limite entre os parênteses.</li>
+                                <li><span class="texto-importante">REAL</span> - tipo numérico, representa um número
+                                    real (pode ser tanto inteiro quanto decimal).</li>
+                                <li><span class="texto-importante">INT</span> - tipo numérico, representa apenas números
+                                    reais <strong>inteiros</strong>.</li>
+                                <li><span class="texto-importante">BOOLEAN</span> - tipo booleano, define se algo é
+                                    verdadeiro ou falso, escreva assim: <strong>true</strong> ou <strong>false</strong>.
+                                </li>
+                                <li><span class="texto-importante">DATE</span> - tipo de data, apenas dia, mês e ano,
+                                    escreva assim: <strong>'YYYY-MM-DD'</strong>.</li>
+                                <li><span class="texto-importante">TIMESTAMP</span> - tipo de data, com dia, mês e ano,
+                                    hora, minuto e segundo, escreva assim: <strong>'YYYY-MM-DD hh:mm:ss'</strong>.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
