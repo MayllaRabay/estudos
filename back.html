@@ -511,7 +511,32 @@
                                             <span style="color: #a71d5d">SELECT</span> rota, campeao
                                             <span style="color: #a71d5d">FROM</span> league_of_legends
                                             <span style="color: #a71d5d">GROUP BY</span> rota;<br>
-                                            Isso retornará um erro, informando que a coluna "campeao" também precisa ser agrupada.
+                                            Isso retornará um erro, informando que a coluna "campeao" também precisa ser
+                                            agrupada.
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h4><span class="texto-importante">Agrupa</span> e <span
+                                                class="texto-importante">conta</span> os dados de uma determinada
+                                            coluna:</h4>
+                                        <div class="perguntas-sql">
+                                            <span style="color: #a71d5d">SELECT</span>
+                                            <span style="color: darkgrey">nome da coluna,</span>
+                                            <span style="color: #a71d5d">COUNT(</span>
+                                            <span style="color: darkgrey">nome da coluna</span>
+                                            <span style="color: #a71d5d">) FROM</span>
+                                            <span style="color: darkgrey">nome da tabela</span>
+                                            <span style="color: #a71d5d">GROUP BY</span>
+                                            <span style="color: darkgrey">nome da coluna</span>;
+                                        </div>
+                                        <h5>Exemplo: <span style="color: #a71d5d">SELECT</span> rota,
+                                            <span style="color: #a71d5d">COUNT(</span> rota
+                                            <span style="color: #a71d5d">) FROM</span> league_of_legends
+                                            <span style="color: #a71d5d">GROUP BY</span> rota;<br>
+                                            Nesse caso ele irá retornar, além da coluna com o nome "rota" e os 5 valores
+                                            em cada linha, uma segunda coluna com o nome "count" (podemos renomeá-la
+                                            usando a palavra reservada <span class="texto-importante">as</span>), com a
+                                            contagem de linhas de cada valor da coluna "rota".
                                         </h5>
                                     </li>
                                 </ul>
