@@ -70,7 +70,7 @@ li {
 }
 
 /* Edição Conteúdo-Cards */
-.card, .card-1 {
+.card {
     display: flex;
     height: fit-content;
     max-width: 70%;
@@ -82,10 +82,10 @@ li {
     margin: 0 auto 50px auto;
     padding: 2em;
 }
-.card h3, .card-1 h3 {
+.card h3 {
     padding-top: 20px;
 }
-.card .card-cabecalho, .card-1 .card-cabecalho, .card h3, .card-1 h3 {
+.card .card-cabecalho, .card h3 {
     padding-bottom: 25px;
 }
 

@@ -89,10 +89,7 @@ table {
     border-collapse: collapse;
     width: fit-content;
 }
-tr:first-child {
-    font-weight: bold;
-}
-td:first-child {
+tr:first-child, td:first-child {
     font-weight: bold;
 }
 td {
