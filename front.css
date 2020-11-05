@@ -121,3 +121,10 @@ td {
     text-align: center;
     padding: 10px;
 }
+
+/* Edição Conteúdo-Card "Elementos básicos para formulários no HTML" */
+.exemplo-de-codigo {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 16px 30px;
+}

@@ -235,15 +235,15 @@
                     </tr>
                     <tr>
                         <td class="texto-importante">color</td>
-                        <td>Configura cor da fonte</td>
+                        <td>Configura a cor da fonte</td>
                         <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">cor</span></td>
                         <td>color: red;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">background-color</td>
-                        <td>Configura cor de fundo</td>
+                        <td>Configura a cor de fundo</td>
                         <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">cor</span></td>
-                        <td>background-color: blue</td>
+                        <td>background-color: blue;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">font-size</td>
@@ -284,22 +284,50 @@
                         <td>text-align: center;</td>
                     </tr>
                     <tr>
+                        <td class="texto-importante">text-decoration</td>
+                        <td>Configura a decoração do texto</td>
+                        <td><span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">none</span>
+                            <span style="background-color: rgba(245, 93, 0, 0.2)" class="valor-css">underline</span>
+                            <span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">dotted</span>
+                            <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">line-through</span>
+                            <span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">cor</span></td>
+                        <td>text-decoration: underline;</td>
+                    </tr>
+                    <tr>
+                        <td class="texto-importante">line-height</td>
+                        <td>Configura o espaçamento entre <strong>linhas</strong></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td>line-height: 1.5em;</td>
+                    </tr>
+                    <tr>
+                        <td class="texto-importante">word-spacing</td>
+                        <td>Configura o espaçamento entre <strong>palavras</strong></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td>word-spacing: 5px;</td>
+                    </tr>
+                    <tr>
+                        <td class="texto-importante">letter-spacing</td>
+                        <td>Configura o espaçamento entre <strong>letras</strong></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td>letter-spacing: 2px;</td>
+                    </tr>
+                    <tr>
                         <td class="texto-importante">padding</td>
-                        <td>Configura o espaçamento <strong>interno</strong></td>
+                        <td>Configura o espaçamento <strong>interno</strong> de um elemento</td>
                         <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
                         <td>padding: 16px;<br>
                             padding: 1em;<br></td>
                     </tr>
                     <tr>
                         <td class="texto-importante">margin</td>
-                        <td>Configura o espaçamento <strong>externo</strong></td>
+                        <td>Configura o espaçamento <strong>externo</strong> de um elemento</td>
                         <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
                         <td>margin: 16px 32px;<br>
-                            margin: 1em 2em</td>
+                            margin: 1em 2em;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">border</td>
-                        <td>Configura largura, estilo de borda e cor</td>
+                        <td>Cria uma borda ao redor do elemento e configura sua largura, estilo e cor</td>
                         <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
                         <td>border: 1px solid lightgrey;</td>
                     </tr>
@@ -313,7 +341,7 @@
                         <td class="texto-importante">width</td>
                         <td>Configura a <strong>largura</strong> de um elemento</td>
                         <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
-                        <td>width: 300px</td>
+                        <td>width: 300px;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">height</td>
@@ -321,12 +349,49 @@
                         <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
                         <td>height: 700px;</td>
                     </tr>
+                    <tr>
+                        <td class="texto-importante">object-fit</td>
+                        <td>Determina como o elemento irá se comportar dentro de seu espaço delimitado (<strong>content box</strong>)</td>
+                        <td><span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">contain</span>
+                            <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">cover</span>
+                            <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">fill</span>
+                            <span style="background-color: rgba(206, 205, 202, 0.5)" class="valor-css">none</span></td>
+                        <td>object-fit: contain;</td>
+                    </tr>
+                    <tr>
+                        <td class="texto-importante">object-position</td>
+                        <td>Determina em qual região o elemento terá <strong>foco</strong> quando seu tamanho é modificado pelo tamanho da página</td>
+                        <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="valor-css">bottom</span>
+                            <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">center</span>
+                            <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">left</span>
+                            <span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">right</span>
+                            <span style="background-color: rgba(140, 46, 0, 0.2)" class="valor-css">top</span></td>
+                        <td>object-position: center;</td>
+                    </tr>
                 </table>
             </div>
         </div>
-
-        
-
+        <div class="card">
+            <div class="card-cabecalho">
+                <h2>Elementos básicos para formulários no HTML</h2>
+            </div>
+            <div class="card-conteudo">
+                <h3>Código no HTML:</h3>
+                <div class="exemplo-de-codigo">
+<pre>
+<span style="color: #a71d5d">&ltform&gt</span>
+    <span style="color: #a71d5d">&ltlabel&gt</span>
+        <span style="color: darkgrey">Se inscreva na nossa newsletter</span>
+        <span style="color: #a71d5d">&ltinput name="<span style="color: darkgrey">email</span>" placeholder="<span style="color: darkgrey">Escreva aqui seu e-mail</span>"&gt</span>
+    <span style="color: #a71d5d">&lt/label&gt</span>
+    <span style="color: #a71d5d">&ltbutton&gt</span>
+        <span style="color: darkgrey">Enviar</span>
+    <span style="color: #a71d5d">&lt/button&gt</span>
+<span style="color: #a71d5d">&lt/form&gt</span>
+</pre>                   
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
