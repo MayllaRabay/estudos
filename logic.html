@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="logic.css">
 </head>
+
 <body>
     <div class="cabecalho">
         <div class="titulo">
@@ -20,12 +22,12 @@
             <a href="front.html">
                 <img alt="💻" aria-label="💻"
                     src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4bb.svg">
-                <h3>Front End</h3>
+                <h3>Front-End</h3>
             </a>
             <a href="back.html">
                 <img alt="💾" aria-label="💾"
                     src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4be.svg">
-                <h3>Back End</h3>
+                <h3>Back-End</h3>
             </a>
             <a href="logic.html">
                 <img alt="🔢" aria-label="🔢"
@@ -36,8 +38,88 @@
     </div>
 
     <div class="conteudo">
-        <img src="escavadeira.png">
-        <h1>Estamos trabalhando nessa página!</h1>
+        <div class="card">
+            <div class="card-cabecalho">
+                <h2>Introdução à Ciência da Computação</h2>
+            </div>
+            <div class="card-conteudo">
+                <ul>
+                    <li>É sobre resolver problemas usando um computador!</li>
+                    <li>O computador precisa <strong>armazenar</strong> as informações (os dados de entrada e saída), mas como?
+                        Usando <span class="texto-importante">memória</span>! A memória do computador tem infinitos
+                        <strong>transitores</strong>, que podem estar ligados (representado pelo número 1) ou desligados
+                        (representado pelo número 0).</li>
+                    <li>Cada lâmpada abaixo representa um transitor:</li>
+                </ul>
+                <div class="imagem-bits">
+                    <img src="bits.jpg">
+                </div>
+                <h4>1 Giga Byte = 1 trilhão de bytes = 8 trilhões de bits (transitores)</h4>
+
+                <h3>Sistema Binário</h3>
+                <ul>
+                    <li>A arte de escrever qualquer número usando apenas 1 e 0:</li>
+                </ul>
+                <div class="imagem-binario">
+                    <img src="binario.png">
+                </div>
+                <ul>
+                    <li>Podemos guardar <strong>letras</strong> usando a <strong>tabela ASCII</strong>, que atribui cada
+                        letra com um número, por exemplo:
+                        a letra A é representada mundialmente pelo número 65 (01000001 em binário). Essa tabela
+                        eventualmente ficou pequena, temos letras com diversos acentos, símbolos, até emojis são
+                        guardados em uma nova tabela chamada <strong>Unicode</strong>.</li>
+                    <li>Para guardar uma <strong>imagem</strong> usamos o <strong>sistema RGB</strong>:
+                        <ul>
+                            <li>Cada pixel contém 3 leds nas cores <span style="color: red;">vermelho</span>, <span
+                                    style="color: green;">verde</span> e <span style="color: blue;">azul</span>.</li>
+                            <li>Dependendo de quanto cada led esteja aceso, enxergaremos uma determinada cor.</li>
+                            <li>A intensidade de cada led vai de 0 a 255 e conseguimos guardar essas informações na
+                                memória do computador através do código binário. Com a junção de centenas a milhares de
+                                pixels, cada um com sua
+                                intensidade RGB, formamos uma imagem.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Linguagens de Programação</h3>
+                <ul>
+                    <li>O computador é uma máquina capaz de armazenar dados e ser instruída a seguir uma sequência de
+                        instruções automaticamente, mas o que isso significa?</li>
+                    <li>Quer dizer que o computador é capaz de <span class="texto-importante">executar
+                            algoritmos</span>:
+                        <ul>
+                            <li>Algoritmo é um passo a passo para resolver um problema;</li>
+                            <li>É aí que entra a linguagem de programação, é com ela que o computador consegue entender
+                                esse passo a passo.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="imagem-linguagens">
+                    <img src="linguagens.png">
+                </div>
+                <ul>
+                    <li>Mas o computador não entendia apenas o código binário? Ele não consegue ler apenas 1 e
+                            0? Como ele vai entender essas linguagens de programação? É aí que entra os
+                            <strong>compiladores</strong>.</li>
+                    <ul>
+                        <li>Todo código, que nós desenvolvedores escrevemos em determinada linguagem de programação,
+                            é chamado de <span class="texto-importante">Código Fonte</span>. Esse código ainda não é
+                            compreendido pelo computador mas, uma vez <strong>compilado</strong>, nosso código torna-se
+                            um <span class="texto-importante">Código Executável</span> (não é exatamente os 1 e 0, mas é
+                            um código bem próximo ao que o computador entende)</li>
+                        <li>Excelente livro sobre como funciona os compiladores: "<strong>Compilers: Principles,
+                                Techniques and Tools</strong>" de Alfred V. Aho, Monica S. Lam, Ravi Sethi e Jeffrey D.
+                            Ullman.</li>
+                    </ul>
+                    <li>Resumo de tudo o que vimos:</li>
+                </ul>
+                <div class="imagem-logica">
+                    <img src="logica.png">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
