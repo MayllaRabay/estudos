@@ -114,3 +114,31 @@ li ul li {
     height: fit-content;
     padding: 20px;
 }
+
+/* Edição Card - "Introdução ao JavaScript" */
+.introducao-js {
+    display: flex;
+    align-items: center;
+}
+.introducao-js img {
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+}
+.exemplos-js {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 16px 30px;
+    margin-bottom: 12px;
+}
+.exemplos-js img {
+    height: 25px;
+    width: 28px;
+}
+hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+h5 {
+    margin: 6px 0 15px 0;
+}
