@@ -85,9 +85,8 @@ li ul li {
     text-align: center;
 }
 p {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
-
 /* Edição Imagens - Card "Introdução à Ciência da Programação" */
 .imagem-bits img {
     display: block;

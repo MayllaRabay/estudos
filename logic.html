@@ -145,10 +145,8 @@
                                 <span style="color: blueviolet">;</span>
                                 <hr>
                                 <h5>Exemplo:</h5>
-                                <span style="color: blueviolet">let</span>
-                                <span style="color: darkgrey">idade</span>
-                                <span style="color: blueviolet">=</span>
-                                <span style="color: darkgrey">25</span>
+                                <span style="color: blueviolet">let</span> idade
+                                <span style="color: blueviolet">=</span> 25
                                 <span style="color: blueviolet">;</span>
                                 <br><br>
                                 <span style="color: blueviolet">idade = 26;</span>
@@ -162,16 +160,74 @@
                                 <span style="color: blueviolet">;</span>
                                 <hr>
                                 <h5>Exemplo:</h5>
-                                <span style="color: blueviolet">const</span>
-                                <span style="color: darkgrey">nome</span>
-                                <span style="color: blueviolet">=</span>
-                                <span style="color: darkgrey">"Maylla"</span>
+                                <span style="color: blueviolet">const</span> nome
+                                <span style="color: blueviolet">=</span> "Maylla"
                                 <span style="color: blueviolet">;</span>
                                 <br><br>
                                 <span style="color:crimson">nome = "Allyam";</span>
                                 <img src="red-x.png">
                                 <h5>Cria uma variável constante e imutável, caso você tente mudar seu conteúdo, retornará um <span style="color: crimson">erro</span>!</h5>
                             </div>
+                        </li>
+                        <li>
+                            <p>Na variável podemos <strong>guardar</strong>:</p>
+                            <ul>
+                                <li><span class="texto-importante">"TEXTO"</span> (ou <strong>string</strong>):</li>
+                                <li><span class="texto-importante">NÚMEROS</span>:</li>
+                                <li><span class="texto-importante">BOOLEANOS</span>:</li>
+                                <li>
+                                    <p><span class="texto-importante">[VETORES]</span> (ou <strong>arrays</strong>): é um conjunto de dados ordenados guardado numa mesma variável.</p>
+                                    <p>Para criar um vetor usamos colchetes:</p>
+                                    <div class="exemplos-js">
+                                        <span style="color: blueviolet">const</span>
+                                        <span style="color: darkgrey">vetor</span>
+                                        <span style="color: blueviolet">= [</span>
+                                        <span style="color: darkgrey">item 1 [index = 0]</span>
+                                        <span style="color: blueviolet">,</span> 
+                                        <span style="color: darkgrey">item 2 [index = 1]</span>
+                                        <span style="color: blueviolet">,</span> 
+                                        <span style="color: darkgrey">item 3 [index = 2]</span>
+                                        <span style="color: blueviolet">];</span>
+                                        <hr>
+                                        <h5>Exemplo:</h5>
+                                        <span style="color: blueviolet">const</span> listaDeMercado
+                                        <span style="color: blueviolet">= [</span> "M&Ms", "Pringles", "Coca-Cola"
+                                        <span style="color: blueviolet">];</span>
+                                    </div>
+                                    <ul>
+                                        <li>Para <span class="texto-importante">criar</span> um vetor usamos <strong>colchetes</strong>;</li>
+                                        <li>Para <span class="texto-importante">acessar um item</span> do vetor usamos seu <strong>índice</strong>(index).
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span class="texto-importante">[0]</span>);</p>
+                                            <p>Isso irá imprimir na tela "M&Ms".</p>
+                                        </li>
+                                        <li>Para saber o <span class="texto-importante">tamanho</span> de um vetor usamos a palavra reservada <strong>length</strong>.
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span class="texto-importante">.length</span>);</p>
+                                            <p>Isso irá imprimir na tela "3", ou seja, minha lista possui 3 itens.</p>
+                                        </li>
+                                        <li>Para saber o valor do <span class="texto-importante">último índice</span> de um vetor usamos <strong>length - 1</strong>.
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span class="texto-importante">.length - 1</span>);</p>
+                                            <p>Isso irá imprimir na tela "2", ou seja, o último índice da minha lista é 2.</p>
+                                        </li>
+                                        <li>Para imprimir na tela o <span class="texto-importante">último item</span> de um vetor usamos <strong>length - 1</strong> entre colchetes.
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span class="texto-importante">[listaDeMercado.length - 1]</span>);</p>
+                                            <p>Isso irá imprimir na tela "Coca-Cola".</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">adicionar</span> um item ao <span class="texto-importante">final</span> do vetor usamos a palavra reservada <strong>push</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span class="texto-importante">.push("Sorvete")</span>;</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">remover</span> o <span class="texto-importante">último</span> item do vetor usamos a palavra reservada <strong>pop</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span class="texto-importante">.pop()</span>;</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">adicionar</span> um item no <span class="texto-importante">início</span> do vetor usamos a palavra reservada <strong>unshift</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span class="texto-importante">.unshift("Balas Fini")</span>;</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">remover</span> o <span class="texto-importante">primeiro</span> item do vetor usamos a palavra reservada <strong>shift</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span class="texto-importante">.shift()</span>;</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="texto-importante">{OBJETOS}</span>:</li>
+                            </ul>
                         </li>
                     </ul>
                 </ul>
