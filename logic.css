@@ -75,14 +75,17 @@
 .card-conteudo h3 {
     padding-top: 20px;
 }
-h4 {
-    text-align: center;
-}
 li {
     padding-bottom: 8px;
 }
 li ul li {
     padding-top: 5px;
+}
+.texto-bits {
+    text-align: center;
+}
+p {
+    padding-bottom: 3px;
 }
 
 /* Edição Imagens - Card "Introdução à Ciência da Programação" */
@@ -95,14 +98,14 @@ li ul li {
 }
 .imagem-binario img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     width: 45%;
     height: 45%;
     padding: 20px;
 }
 .imagem-linguagens img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     width: 55%;
     height: 55%;
     padding: 20px 0;
@@ -121,6 +124,7 @@ li ul li {
     align-items: center;
 }
 .introducao-js img {
+    margin-top: -10px;
     margin-left: 10px;
     height: 60px;
     width: 60px;
