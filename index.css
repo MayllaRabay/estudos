@@ -56,7 +56,7 @@
     display: flex;
     height: fit-content;
     max-width: 70%;
-    min-width: 900px;
+    min-width: fit-content;
     flex-direction: column;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
