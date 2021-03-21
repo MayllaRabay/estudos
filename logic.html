@@ -45,7 +45,8 @@
             <div class="card-conteudo">
                 <ul>
                     <li>É sobre resolver problemas usando um computador!</li>
-                    <li>O computador precisa <strong>armazenar</strong> as informações (os dados de entrada e saída), mas como?
+                    <li>O computador precisa <strong>armazenar</strong> as informações (os dados de entrada e saída),
+                        mas como?
                         Usando <span class="texto-importante">memória</span>! A memória do computador tem infinitos
                         <strong>transitores</strong>, que podem estar ligados (representado pelo número 1) ou desligados
                         (representado pelo número 0).</li>
@@ -54,7 +55,7 @@
                 <div class="imagem-bits">
                     <img src="bits.jpg">
                 </div>
-                <h4>1 Giga Byte = 1 trilhão de bytes = 8 trilhões de bits (transitores)</h4>
+                <h4 class="texto-bits">1 Giga Byte = 1 trilhão de bytes = 8 trilhões de bits (transitores)</h4>
 
                 <h3>Sistema Binário</h3>
                 <ul>
@@ -100,8 +101,8 @@
                 </div>
                 <ul>
                     <li>Mas o computador não entendia apenas o código binário? Ele não consegue ler apenas 1 e
-                            0? Como ele vai entender essas linguagens de programação? É aí que entra os
-                            <strong>compiladores</strong>.</li>
+                        0? Como ele vai entender essas linguagens de programação? É aí que entra os
+                        <strong>compiladores</strong>.</li>
                     <ul>
                         <li>Todo código, que nós desenvolvedores escrevemos em determinada linguagem de programação,
                             é chamado de <span class="texto-importante">Código Fonte</span>. Esse código ainda não é
@@ -117,6 +118,180 @@
                 <div class="imagem-logica">
                     <img src="logica.png">
                 </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-cabecalho">
+                <div class="introducao-js">
+                    <h2>Introdução ao JavaScript</h2>
+                    <img src="js.png">
+                </div>
+            </div>
+            <div class="card-conteudo">
+                <ul>
+                    <li>Para resolver problemas, precisamos guardar informações, e informações são
+                        <strong>dados</strong>!</li>
+                    <li>E como guardamos dados? Através de <strong>variáveis</strong>.</li>
+                    <ul>
+                        <li>
+                            <p>Para <strong>criar</strong> uma variável podemos usar <span
+                                    class="texto-importante">let</span> ou <span class="texto-importante">const</span>,
+                                mas qual a diferença entre eles? </p>
+                            <div class="exemplos-js">
+                                <span style="color: blueviolet">let</span>
+                                <span style="color: darkgrey">nome da variável</span>
+                                <span style="color: blueviolet">=</span>
+                                <span style="color: darkgrey">"valor da variável"</span>
+                                <span style="color: blueviolet">;</span>
+                                <hr>
+                                <h5>Exemplo:</h5>
+                                <span style="color: blueviolet">let</span> idade
+                                <span style="color: blueviolet">=</span> 25
+                                <span style="color: blueviolet">;</span>
+                                <br><br>
+                                <span style="color: blueviolet">idade = 26;</span>
+                                <h5>Posso mudar o valor da minha variável futuramente</h5>
+                            </div>
+                            <div class="exemplos-js">
+                                <span style="color: blueviolet">const</span>
+                                <span style="color: darkgrey">nome da variável</span>
+                                <span style="color: blueviolet">=</span>
+                                <span style="color: darkgrey">"valor da variável"</span>
+                                <span style="color: blueviolet">;</span>
+                                <hr>
+                                <h5>Exemplo:</h5>
+                                <span style="color: blueviolet">const</span> nome
+                                <span style="color: blueviolet">=</span> "Maylla"
+                                <span style="color: blueviolet">;</span>
+                                <br><br>
+                                <span style="color:crimson">nome = "Allyam";</span>
+                                <img src="red-x.png">
+                                <h5>Cria uma variável constante e imutável, caso você tente mudar seu conteúdo,
+                                    retornará um <span style="color: crimson">erro</span>!</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Na variável podemos <strong>guardar</strong>:</p>
+                            <ul>
+                                <li><span class="texto-importante">"TEXTO"</span> (ou <strong>string</strong>):</li>
+                                <li><span class="texto-importante">NÚMEROS</span>:</li>
+                                <li><span class="texto-importante">BOOLEANOS</span>:</li>
+                                <li>
+                                    <p><span class="texto-importante">[VETORES]</span> (ou <strong>arrays</strong>): é
+                                        um conjunto de dados ordenados guardado numa mesma variável.</p>
+                                    <div class="exemplos-js">
+                                        <span style="color: blueviolet">const</span>
+                                        <span style="color: darkgrey">vetor</span>
+                                        <span style="color: blueviolet">= [</span>
+                                        <span style="color: darkgrey">item 1 [index = 0]</span>
+                                        <span style="color: blueviolet">,</span>
+                                        <span style="color: darkgrey">item 2 [index = 1]</span>
+                                        <span style="color: blueviolet">,</span>
+                                        <span style="color: darkgrey">item 3 [index = 2]</span>
+                                        <span style="color: blueviolet">];</span>
+                                        <hr>
+                                        <h5>Exemplo:</h5>
+                                        <span style="color: blueviolet">const</span> listaDeMercado
+                                        <span style="color: blueviolet">= [</span> "M&Ms", "Pringles", "Coca-Cola"
+                                        <span style="color: blueviolet">];</span>
+                                    </div>
+                                    <ul>
+                                        <li>Para <span class="texto-importante">criar</span> um vetor usamos
+                                            <strong>colchetes</strong>;</li>
+                                        <li>Para <span class="texto-importante">acessar um item</span> do vetor usamos
+                                            seu <strong>índice</strong>(index).
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span
+                                                class="texto-importante">[0]</span>);</p>
+                                            <p>Isso irá imprimir na tela "M&Ms".</p>
+                                        </li>      
+                                        <li>Para saber o <span class="texto-importante">tamanho</span> de um vetor
+                                            usamos a palavra reservada <strong>length</strong>.
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span
+                                                class="texto-importante">.length</span>);</p>
+                                            <p>Isso irá imprimir na tela "3", ou seja, minha lista possui 3 itens.</p>
+                                        </li>
+                                        <li>Para saber o valor do <span class="texto-importante">último índice</span> de
+                                            um vetor usamos <strong>length - 1</strong>.
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span
+                                                class="texto-importante">.length - 1</span>);</p>
+                                            <p>Isso irá imprimir na tela "2", ou seja, o último índice da minha lista é
+                                            2.</p>
+                                        </li>
+                                        <li>Para imprimir na tela o <span class="texto-importante">último item</span> de
+                                            um vetor usamos <strong>length - 1</strong> entre colchetes.
+                                            <p><strong>Exemplo</strong>: console.log(listaDeMercado<span
+                                                class="texto-importante">[listaDeMercado.length - 1]</span>);</p>
+                                            <p>Isso irá imprimir na tela "Coca-Cola".</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">adicionar</span> um item ao <span
+                                                class="texto-importante">final</span> do vetor usamos a palavra
+                                            reservada <strong>push</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span
+                                                class="texto-importante">.push("Sorvete")</span>;</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">remover</span> o <span
+                                                class="texto-importante">último</span> item do vetor usamos a palavra
+                                            reservada <strong>pop</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span
+                                                class="texto-importante">.pop()</span>;</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">adicionar</span> um item no <span
+                                                class="texto-importante">início</span> do vetor usamos a palavra
+                                            reservada <strong>unshift</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span
+                                                class="texto-importante">.unshift("Balas Fini")</span>;</p>
+                                        </li>
+                                        <li>Para <span class="texto-importante">remover</span> o <span
+                                                class="texto-importante">primeiro</span> item do vetor usamos a palavra
+                                            reservada <strong>shift</strong>.
+                                            <p><strong>Exemplo</strong>: listaDeMercado<span
+                                                class="texto-importante">.shift()</span>;</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><span class="texto-importante">{OBJETOS}</span>: é um conjunto de dados
+                                        relacionados guardados numa mesma variável.</p>
+                                    <div class="exemplos-js">
+                                        <span style="color: blueviolet">const</span>
+                                        <span style="color: darkgrey">objeto</span>
+                                        <span style="color: blueviolet">= {</span><br>
+                                        <span style="color: darkgrey">nome da propriedade: "valor da propriedade"</span>
+                                        <span style="color: blueviolet">,</span><br>
+                                        <span style="color: darkgrey">nome da propriedade: "valor da propriedade"</span>
+                                        <span style="color: blueviolet">,</span><br>
+                                        <span style="color: darkgrey">nome da propriedade: "valor da propriedade"</span><br>
+                                        <span style="color: blueviolet">};</span>
+                                        <hr>
+                                        <h5>Exemplo:</h5>
+                                        <pre>
+<span style="color: blueviolet">const</span> filho <span style="color: blueviolet">= {</span>
+    nome: "William"<span style="color: blueviolet">,</span>
+    idade: 4<span style="color: blueviolet">,</span>
+    desenhosFavoritos: ["Os Backyardigans", "Peppa Pig", "Patrulha Canina"]<span style="color: blueviolet">,</span>
+    irmao: {
+        nome: "Aquiles",
+        idade: "7 meses"
+    }
+<span style="color: blueviolet">};</span></pre>
+                                    </div>
+                                    <ul>
+                                        <li>Para <span class="texto-importante">criar</span> um objeto usamos
+                                            <strong>chaves</strong>.</li>
+                                        <li>Dentro de um objeto podemos guardar vetores e outros objetos.</li>
+                                        <li>Para acessar uma propriedade dentro do objeto usamos
+                                            <strong>objeto.propriedade</strong>.
+                                            <p><strong>Exemplo</strong>: console.log(<span
+                                                class="texto-importante">filho.nome</span>);</p>
+                                            <p>Isso irá imprimir na tela "William".</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </div>

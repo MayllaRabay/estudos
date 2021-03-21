@@ -126,6 +126,12 @@
                         <td><span style="color: blueviolet">&ltbr&gt</span></td>
                     </tr>
                     <tr>
+                        <td style="color: blueviolet">hr</td>
+                        <td>Separa o conteúdo com uma linha horizontal</td>
+                        <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
+                        <td><span style="color: blueviolet">&lthr&gt</span></td>
+                    </tr>
+                    <tr>
                         <td style="color: blueviolet">div</td>
                         <td>Elemento block genérico</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
@@ -204,7 +210,7 @@
                     <tr>
                         <td style="color: blueviolet">td</td>
                         <td>Delimita uma <strong>célula</strong> da tabela</td>
-                        <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
                         <td>&lttable&gt<br>
                             &lttr&gt<br> 
                             <span style="color: blueviolet;">&lttd&gt &lt/td&gt</span><br>
@@ -376,6 +382,63 @@
                 <h2>Elementos básicos para formulários no HTML</h2>
             </div>
             <div class="card-conteudo">
+                <table>
+                    <tr>
+                        <td>Nome do Elemento</td>
+                        <td>Descrição</td>
+                        <td>Tipo</td>
+                        <td>Exemplo</td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">form</td>
+                        <td>Delimita um formulário</td>
+                        <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
+                        <td><span style="color: blueviolet">&ltform&gt</span> Todos os outros elementos estarão aqui dentro <span style="color: blueviolet">&lt/form&gt</span></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">label</td>
+                        <td>Dita a legenda de um campo de formulário</td>
+                        <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
+                        <td><label>
+                            <span style="color: blueviolet">Aqui está a legenda para o input abaixo</span> <input>
+                        </label></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">input</td>
+                        <td>Cria um campo de formulário (apenas uma linha), seja ele de texto, número, data, etc</td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><input placeholder="Apenas uma linha hein" style="color: blueviolet"></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">select</td>
+                        <td>Cria um campo de formulário que permite escolher entre opções</td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td>Isso é um &ltselect&gt vazio <select></select></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">option</td>
+                        <td>Define uma opção de valor para um &ltselect&gt</td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td>Opa, agora temos opções <select>
+                            <option></option>
+                            <option>DC</option>
+                            <option>Marvel</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">textarea</td>
+                        <td>Cria um campo de formulário de texto longo, com mais de uma linha</td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><textarea placeholder="Digite aqui o livro do Senhor dos Anéis" style="color: blueviolet"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="color: blueviolet">button</td>
+                        <td>Delimita um botão</td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><button>Sou apenas um botão, não clique</button></td>
+                    </tr>
+                </table>
+                <br>
                 <h3>Código no HTML:</h3>
                 <div class="exemplo-de-codigo">
 <pre>
@@ -391,15 +454,18 @@
 </pre>                   
                 </div>
                 <h3>Como ficaria na web:</h3>
-                <form>
-                    <label>
-                        Se inscreva na nossa newsletter
-                        <input name="email" placeholder="Escreva aqui seu e-mail">
-                    </label>
-                    <button>
-                        Enviar
-                    </button>
-                </form>
+                <div class="exemplo-de-codigo">
+                    <form>
+                        <label>
+                            Se inscreva na nossa newsletter
+                            <input name="email" placeholder="Escreva aqui seu e-mail">
+                        </label>
+                        <button>
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <a href="https://mayllarabay.github.io/exercicio_formulario/" target="_blank"><h3>Exercícios para praticar!</h3></a>
             </div>
         </div>
     </div>

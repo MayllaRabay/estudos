@@ -68,6 +68,11 @@ hr {
 li {
     padding-bottom: 5px;
 }
+p {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
 
 /* Edição Conteúdo-Cards */
 .card {
