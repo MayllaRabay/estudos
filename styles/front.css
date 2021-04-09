@@ -3,6 +3,7 @@
     font-family: 'Grandstander', cursive;
     margin: 0;
     padding: 0;
+    line-height: 1.2em;
 }
 
 /* Edição Cabeçalho */
@@ -37,6 +38,9 @@
     display: flex;
     align-items: center;
 }
+.titulo a img {
+    margin: 0.5em;
+}
 .navegacao {
     display: flex;
     align-items: center;
@@ -45,6 +49,9 @@
 .navegacao a {
     display: flex;
     align-items: center;
+}
+.navegacao a img {
+    padding: 0.3em;
 }
 
 /* Edição Conteúdo */
@@ -88,14 +95,20 @@
 .card .card-cabecalho {
     padding-bottom: 25px;
 }
-.card h2, .card h3 {
+.card h2 {
     margin-bottom: 1em;
+}
+.card h3 {
+    margin: 1em 0 0.5em 0;
 }
 .card-conteudo .pilares-web img {
     display: flex;
     width: fit-content;
     height: fit-content;
     padding-right: 40px;
+}
+.lista-com-margem {
+    margin-left: 1.5em;
 }
 .pilares-web {
     display: flex;

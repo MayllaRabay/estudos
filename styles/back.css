@@ -3,6 +3,7 @@
     font-family: 'Grandstander', cursive;
     margin: 0;
     padding: 0;
+    line-height: 1.2em;
 }
 
 /* Edição Cabeçalho */
@@ -53,27 +54,26 @@
     flex-direction: column;
     align-items: center;
 }
-.texto-importante {
+.strong {
     color:blueviolet;
     font-weight: bold;
 }
-h4 {
-    padding-bottom: 3px;
+.lista-com-margem {
+    margin-left: 1.5em;
 }
-h5 {
-    padding:5px 0 30px 0;
+h2 {
+    margin-bottom: 1em;
+}
+h4 {
+    margin-top: 2em;
 }
 hr {
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-li {
-    padding-bottom: 5px;
+    margin-bottom: 1em;
 }
 p {
     font-size: 14px;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 /* Edição Conteúdo-Cards */
@@ -122,7 +122,11 @@ p {
 .perguntas-sql {
     display: block;
     background-color: #f7f7f7;
-    padding: 16px 30px;
+    color: darkgrey;
+    padding: 1em 2em;
+}
+.sql {
+    color: #a71d5d;
 }
 
 /* Edição Conteúdo-Card "Informações Importantes" */
