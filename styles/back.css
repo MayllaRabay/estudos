@@ -9,6 +9,7 @@
 /* Edição Cabeçalho */
 .cabecalho {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding: 1em 2em;
@@ -18,7 +19,6 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    text-align: center;
 }
 .cabecalho a {
     padding: 0 1em;
@@ -36,7 +36,11 @@
 }
 .titulo a {
     display: flex;
+    flex-shrink: 1;
     align-items: center;
+}
+.titulo a img {
+    margin-right: 0.4em;
 }
 .navegacao {
     display: flex;
@@ -46,6 +50,9 @@
 .navegacao a {
     display: flex;
     align-items: center;
+}
+.navegacao a img {
+    padding: 0.3em;
 }
 
 /* Edição Conteúdo */
@@ -58,17 +65,17 @@
     color:blueviolet;
     font-weight: bold;
 }
+.importante {
+    font-size: 14px;
+}
 .lista-com-margem {
     margin-left: 1.5em;
 }
-h2 {
+h2, hr {
     margin-bottom: 1em;
 }
 h4 {
     margin-top: 2em;
-}
-hr {
-    margin-bottom: 1em;
 }
 p {
     font-size: 14px;
@@ -130,7 +137,7 @@ p {
 }
 
 /* Edição Conteúdo-Card "Informações Importantes" */
-.informacoes-lado-a-lado {
+.info {
     display: flex;
     justify-content: space-between;
     padding-bottom: 35px;

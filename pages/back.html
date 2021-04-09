@@ -46,17 +46,20 @@
             <h2>O que o Back-End faz?</h2>
             <div class="card-conteudo-back">
                 <div class="conteudo-parte-1">
-                    <div class="back">
-                        <ul>
-                            <li>Atua no lado do servidor, <strong>não</strong> tem contato direto com o usuário;</li>
-                            <li>Cuida da maior parte da regra de negócio;</li>
-                            <li>Manipula <strong>dados</strong> do usuário;</li>
-                            <li>Lida com programas que expõem <strong>APIs</strong> e manipulam <strong>banco de
-                                    dados</strong>;</li>
-                            <li>Recebe pedidos (<strong>requests</strong>) da página web e envia informações;</li>
-                            <li>Tem seus códigos executados pelo <strong>servidor</strong>.</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>Atua no lado do servidor, <strong>não</strong> 
+                            tem contato direto com o usuário;
+                        </li>
+                        <li>Cuida da maior parte da regra de negócio;</li>
+                        <li>Manipula <strong>dados</strong> do usuário;</li>
+                        <li>Lida com programas que expõem <strong>APIs</strong> e manipulam 
+                            <strong>banco de dados</strong>;
+                        </li>
+                        <li>Recebe pedidos (<strong>requests</strong>) da página web e 
+                            envia informações;
+                        </li>
+                        <li>Tem seus códigos executados pelo <strong>servidor</strong>.</li>
+                    </ul>
                     <div class="banco-dados">
                         <img src="../images/banco-dados.jpg">
                     </div>
@@ -125,524 +128,489 @@
 
                     <h4><span class="strong">Cria</span> um banco de dados:</h4>
                     <div class="perguntas-sql">
-                        <span class="sql">CREATE DATABASE</span> nome do banco de dados;
+                        <span class="sql">CREATE DATABASE</span>
+                        nome do banco de dados;
                     </div>
-                    <p><strong>Exemplo:</strong> <span class="sql">CREATE DATABASE</span> riot_games;</p>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">CREATE DATABASE</span> riot_games;
+                    </p>
 
                     <h4><span class="strong">Destrói/derruba</span> um banco de dados:</h4>
                     <div class="perguntas-sql">
                         <span class="sql">DROP DATABASE</span> nome do banco de dados;
                     </div>
-                    <p><strong>Exemplo:</strong> <span class="sql">DROP DATABASE</span> riot_games;</p>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">DROP DATABASE</span> riot_games;
+                    </p>
 
                     <h4><span class="strong">Cria</span> uma tabela:</h4>
                     <div class="perguntas-sql">
-                        <span class="sql">CREATE TABLE</span> nome da tabela (coluna TIPO, coluna TIPO, coluna TIPO);
+                        <span class="sql">CREATE TABLE</span> nome da tabela
+                        (coluna TIPO, coluna TIPO, coluna TIPO);
                     </div>
-                    <p><strong>Exemplo:</strong> <span class="sql">CREATE TABLE</span> league_of_legends
-                        (campeao TEXT, rota TEXT, preco INT);</p>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">CREATE TABLE</span> league_of_legends
+                        (campeao TEXT, rota TEXT, preco INT);
+                    </p>
 
                     <h4><span class="strong">Destrói/derruba</span> uma tabela:</h4>
                     <div class="perguntas-sql">
-                        <span class="sql">DROP TABLE</span>nome da tabela;
+                        <span class="sql">DROP TABLE</span> nome da tabela;
                     </div>
-                    <p><strong>Exemplo:</strong> <span class="sql">DROP TABLE</span> league_of_legends;</p>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">DROP TABLE</span> league_of_legends;
+                    </p>
 
                     <h4><span class="strong">Remove</span> os registros de uma tabela
                         <span class="strong">sem deletá-la</span>:
                     </h4>
                     <div class="perguntas-sql">
-                        <span class="sql">TRUNCATE TABLE</span>
-                        nome da tabela</span>;
+                        <span class="sql">TRUNCATE TABLE</span> nome da tabela;
                     </div>
-                    <p><strong>Exemplo:</strong> <span class="sql">TRUNCATE TABLE</span>
-                        league_of_legends;</p>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">TRUNCATE TABLE</span> league_of_legends;
+                    </p>
                 </div>
+
                 <hr>
+
                 <div class="card-conteudo-parte">
-                    <ul>
-                        <li>
-                            <h3>Linguagem de <span class="strong">Manipulação</span> de Dados (DML)</h3>
-                            <ul>
-                                <li>Data Manipulation Language;</li>
-                                <li>Usada para inserir, atualizar e remover registros.</li>
-                                <br>
-                                <ul>
-                                    <li>
-                                        <h4><span class="strong">Insere</span> uma nova linha ou novo registro
-                                            na tabela:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">INSERT INTO</span>
-                                            nome da tabela (coluna 1, coluna 2, coluna
-                                            3)</span>
-                                            <span class="sql">VALUES</span>
-                                            (valor da coluna 1, valor da coluna 2, valor
-                                            da coluna 3)</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">INSERT INTO</span>
-                                            league_of_legends
-                                            (campeao, rota, preco)
-                                            <span class="sql">VALUES</span> ('Garen', 'top', 6300);<br><br>
-                                            <span class="strong">Importante!</span> Os valores são sempre
-                                            escritos em centavos, por exemplo 8 reais = 800.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Atualiza</span> alguma linha ou registro da
-                                            tabela:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">UPDATE</span>
-                                            nome da tabela</span>
-                                            <span class="sql">SET</span>
-                                            o que será atualizado</span>
-                                            <span class="sql">WHERE</span>
-                                            condição</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">UPDATE</span> league_of_legends
-                                            <span class="sql">SET</span> preco = 4800
-                                            <span class="sql">WHERE</span> campeao = 'Garen';
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Deleta</span> um registro da tabela:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">DELETE FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">WHERE</span>
-                                            o que será deletado</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">DELETE FROM</span>
-                                            league_of_legends
-                                            <span class="sql">WHERE</span> campeao = 'Urf';
-                                        </p>
-                                    </li>
-                                </ul>
-                            </ul>
-                        </li>
+                    <h3>Linguagem de <span class="strong">Manipulação</span> de Dados (DML)</h3>
+                    <ul class="lista-com-margem">
+                        <li>Data Manipulation Language;</li>
+                        <li>Usada para inserir, atualizar e remover registros.</li>
                     </ul>
+
+                    <h4><span class="strong">Insere</span> uma nova linha ou novo registro na tabela:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">INSERT INTO</span>
+                        nome da tabela (coluna 1, coluna 2, coluna 3)
+                        <span class="sql">VALUES</span>
+                        (valor da coluna 1, valor da coluna 2, valor da coluna 3);
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">INSERT INTO</span>
+                        league_of_legends (campeao, rota, preco)
+                        <span class="sql">VALUES</span> ('Garen', 'top', 6300);
+                        <div class="importante">
+                            <span class="strong">Importante!</span> Os valores são sempre
+                            escritos em centavos, por exemplo 8 reais = 800.
+                        </div>
+                    </p>
+
+                    <h4><span class="strong">Atualiza</span>
+                        alguma linha ou registro da tabela:
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">UPDATE</span> nome da tabela
+                        <span class="sql">SET</span> o que será atualizado
+                        <span class="sql">WHERE</span> condição;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">UPDATE</span> league_of_legends
+                        <span class="sql">SET</span> preco = 4800
+                        <span class="sql">WHERE</span> campeao = 'Garen';
+                    </p>
+
+                    <h4><span class="strong">Deleta</span> um registro da tabela:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">DELETE FROM</span> nome da tabela
+                        <span class="sql">WHERE</span> o que será deletado;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">DELETE FROM</span> league_of_legends
+                        <span class="sql">WHERE</span> campeao = 'Urf';
+                    </p>
                 </div>
+
                 <hr>
+
                 <div class="card-conteudo-parte">
-                    <ul>
-                        <li>
-                            <h3>Linguagem de <span class="strong">Consulta</span> de Dados (DQL)</h3>
-                            <ul>
-                                <li>Data Query Language;</li>
-                                <li>Usada para consultar dados;</li>
-                                <li>A mais importante de todas as sublinguagens.</li>
-                                <br>
-                                <ul>
-                                    <li>
-                                        <h4>Seleciona <span class="strong">todas</span> as colunas da tabela:
-                                        </h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Seleciona <span class="strong">uma</span> coluna da tabela:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome da coluna</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> campeao
-                                            <span class="sql">FROM</span> league_of_legends;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Seleciona algo da tabela com uma <span class="strong">condição</span>:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome(s) da(s) coluna(s)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">WHERE</span>
-                                            condição</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> campeao
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">WHERE</span> rota = 'mid';
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Seleciona algo da tabela com <span class="strong">mais de
-                                                uma</span> condição (operador lógico <span class="strong">E</span>):
-                                        </h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome(s) da(s) coluna(s)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">WHERE</span>
-                                            condição</span>
-                                            <span class="sql">AND</span>
-                                            outra condição</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">WHERE</span> rota = 'adc'
-                                            <span class="sql">AND</span> campeao = 'Draven';
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Seleciona algo da tabela com <span class="strong">mais de
-                                                uma</span> condição, porém <span class="strong">negando-a</span>
-                                            (negativa lógica <span class="strong">NOT</span>):</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome(s) da(s) coluna(s)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">WHERE</span>
-                                            condição</span>
-                                            <span class="sql">AND NOT</span>
-                                            outra condição</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">WHERE</span> rota = 'mid'
-                                            <span class="sql">AND NOT</span> campeao = 'Ahri';<br><br>
-                                            <span class="strong">Importante!</span> Podemos negar duas
-                                            condições ao mesmo tempo, usando parênteses:<br>
-                                            <strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">WHERE</span> rota = 'mid'
-                                            <span class="sql">AND NOT</span>
-                                            <span class="strong">(</span>campeao = 'Ahri' <span class="sql">AND</span>
-                                            campeao = 'Syndra'<span class="strong">)</span>;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Seleciona algo da tabela <span class="strong">juntando</span> duas
-                                            (ou mais) condições (operador lógico <span class="strong">OU</span>):</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome(s) da(s) coluna(s)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">WHERE</span>
-                                            condição</span>
-                                            <span class="sql">OR</span>
-                                            outra condição somada</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">WHERE</span> rota = 'top'
-                                            <span class="sql">OR</span> rota = 'sup';
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Conta</span> quantas linhas existem na
-                                            tabela:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT COUNT(id) FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT COUNT(id) FROM</span>
-                                            league_of_legends;</p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Soma</span> os valores de todos os campos de
-                                            uma determinada coluna:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT SUM</span>
-                                            (nome da coluna)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT SUM</span> (preco)
-                                            <span class="sql">FROM</span> league_of_legends;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Tira a <span class="strong">média</span> dos valores de uma
-                                            determinada coluna:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT AVG</span>
-                                            (nome da coluna)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT AVG</span> (preco)
-                                            <span class="sql">FROM</span> league_of_legends;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Determina um <span class="strong">limite</span> de contagem de
-                                            colunas:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            *</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">LIMIT</span>
-                                            número do limite</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">LIMIT</span> 50;<br><br>
-                                            No caso do exemplo ele irá retornar todos os dados da tabela da linha <span
-                                                class="strong">1</span> até a linha <span class="strong">50</span>.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Além de determinar um limite para a contagem, podemos especificar em qual
-                                            <span class="strong">linha</span> a contagem <span
-                                                class="strong">começa</span>:
-                                        </h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            *</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">LIMIT</span>
-                                            número do limite</span>
-                                            <span class="sql">OFFSET</span>
-                                            número da linha inicial</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> *
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">LIMIT</span> 50
-                                            <span class="sql">OFFSET</span> 20;<br><br>
-                                            No caso do exemplo ele irá retornar todos os dados da tabela da linha <span
-                                                class="strong">21</span> até a linha <span class="strong">70</span>.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Retorna o <span class="strong">valor mínimo</span> de uma
-                                            determinada coluna:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT MIN</span>
-                                            (nome da coluna)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT MIN</span> (preco)
-                                            <span class="sql">FROM</span> league_of_legends;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Retorna o <span class="strong">valor máximo</span> de uma
-                                            determinada coluna:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT MAX</span>
-                                            (nome da coluna)</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT MAX</span> (preco)
-                                            <span class="sql">FROM</span> league_of_legends;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Ordena</span> os dados de uma determinada
-                                            coluna (a forma padrão é <span class="strong">crescente</span>,
-                                            não é necessário escrever o "ASC"):</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome da coluna</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">ORDER BY</span>
-                                            nome da coluna que você quer ordenar</span>
-                                            <span class="sql">ASC</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> campeoes
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">ORDER BY</span> campeoes;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Ordena</span> os dados de uma determinada
-                                            coluna de forma <span class="strong">decrescente</span>:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome da coluna</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">ORDER BY</span>
-                                            nome da coluna que você quer ordenar</span>
-                                            <span class="sql">DESC</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> campeoes
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">ORDER BY</span> campeoes
-                                            <span class="sql">DESC</span>;
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Agrupa</span> os dados de uma determinada
-                                            coluna:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome da coluna</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">GROUP BY</span>
-                                            nome da coluna</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> rota
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">GROUP BY</span> rota;<br><br>
-                                            Temos 5 valores da coluna "rota" em nossa tabela: "top", "mid", "adc", "sup"
-                                            e "jg". No caso do exemplo ele irá retornar apenas uma coluna com o nome
-                                            "rota" e os 5 valores em cada linha.<br><br>
-                                            <span class="strong">Importante!</span> Toda coluna que
-                                            selecionarmos (depois de SELECT) precisa ser agrupada (depois de GROUP BY),
-                                            se tivermos uma query do tipo:<br>
-                                            <span class="sql">SELECT</span> rota, campeao
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">GROUP BY</span> rota;<br>
-                                            Isso retornará um erro, informando que a coluna "campeao" também precisa ser
-                                            agrupada.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4><span class="strong">Agrupa</span> e <span class="strong">conta</span> os
-                                            dados de uma determinada
-                                            coluna:</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT</span>
-                                            nome da coluna,</span>
-                                            <span class="sql">COUNT(</span>
-                                            nome da coluna</span>
-                                            <span class="sql">) FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">GROUP BY</span>
-                                            nome da coluna</span>;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT</span> rota,
-                                            <span class="sql">COUNT(</span> rota
-                                            <span class="sql">) FROM</span> league_of_legends
-                                            <span class="sql">GROUP BY</span> rota;<br><br>
-                                            Nesse caso ele irá retornar, além da coluna com o nome "rota" e os 5 valores
-                                            em cada linha, uma segunda coluna com o nome "count" (podemos renomeá-la
-                                            usando a palavra reservada <span class="strong">as</span>), com a
-                                            contagem de linhas de cada valor da coluna "rota".
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Retorna dados <span class="strong">distintos</span> de uma
-                                            determinada coluna (o ORDER BY não seria necessário, ele apenas ordena os
-                                            dados distintos que coletamos):</h4>
-                                        <div class="perguntas-sql">
-                                            <span class="sql">SELECT DISTINCT</span>
-                                            nome da coluna</span>
-                                            <span class="sql">FROM</span>
-                                            nome da tabela</span>
-                                            <span class="sql">ORDER BY</span>
-                                            nome da coluna;
-                                        </div>
-                                        <p><strong>Exemplo:</strong> <span class="sql">SELECT DISTINCT</span> preco
-                                            <span class="sql">FROM</span> league_of_legends
-                                            <span class="sql">ORDER BY</span> preco;<br><br>
-                                            Em nossa tabela "league_of_legends" temos diversos campeões com o mesmo
-                                            preço. Ao usarmos DISTINCT, em vez de retornar uma tabela com várias linhas
-                                            do mesmo
-                                            preço, apareceria apenas uma linha de cada preço distinto.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </ul>
-                        </li>
+                    <h3>Linguagem de <span class="strong">Consulta</span> de Dados (DQL)</h3>
+                    <ul class="lista-com-margem">
+                        <li>Data Query Language;</li>
+                        <li>Usada para consultar dados;</li>
+                        <li>A mais importante de todas as sublinguagens.</li>
                     </ul>
+
+                    <h4>Seleciona <span class="strong">todas</span> as colunas da tabela:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> league_of_legends;
+                    </p>
+
+                    <h4>Seleciona <span class="strong">uma</span> coluna da tabela:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome da coluna
+                        <span class="sql">FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> campeao
+                        <span class="sql">FROM</span> league_of_legends;
+                    </p>
+
+                    <h4>Seleciona algo da tabela com uma
+                        <span class="strong">condição</span>:
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome(s) da(s) coluna(s)
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">WHERE</span> condição;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> campeao
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">WHERE</span> rota = 'mid';
+                    </p>
+
+                    <h4>Seleciona algo da tabela com
+                        <span class="strong">mais de uma</span> condição
+                        (operador lógico <span class="strong">E</span>):
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome(s) da(s) coluna(s)
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">WHERE</span> condição
+                        <span class="sql">AND</span> outra condição;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">WHERE</span> rota = 'adc'
+                        <span class="sql">AND</span> campeao = 'Draven';
+                    </p>
+
+                    <h4>Seleciona algo da tabela com
+                        <span class="strong">mais de uma</span> condição, porém
+                        <span class="strong">negando-a</span> (negativa lógica
+                        <span class="strong">NOT</span>):
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome(s) da(s) coluna(s)
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">WHERE</span> condição
+                        <span class="sql">AND NOT</span> outra condição;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">WHERE</span> rota = 'mid'
+                        <span class="sql">AND NOT</span> campeao = 'Ahri';
+                        <div class="importante">
+                            <span class="strong">Importante!</span> Podemos negar duas
+                            condições ao mesmo tempo, usando parênteses:<br />
+                            <strong>Exemplo:</strong>
+                            <span class="sql">SELECT</span> *
+                            <span class="sql">FROM</span> league_of_legends
+                            <span class="sql">WHERE</span> rota = 'mid'
+                            <span class="sql">AND NOT</span>
+                            <span class="strong">(</span>campeao = 'Ahri'
+                            <span class="sql">AND</span> campeao = 'Syndra'
+                            <span class="strong">)</span>;
+                        </div>
+                    </p>
+
+                    <h4>Seleciona algo da tabela
+                        <span class="strong">juntando</span> duas (ou mais) condições
+                        (operador lógico <span class="strong">OU</span>):
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome(s) da(s) coluna(s)
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">WHERE</span> condição
+                        <span class="sql">OR</span> outra condição somada;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">WHERE</span> rota = 'top'
+                        <span class="sql">OR</span> rota = 'sup';
+                    </p>
+
+                    <h4><span class="strong">Conta</span> quantas linhas existem na
+                        tabela:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT COUNT(id) FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT COUNT(id) FROM</span> league_of_legends;
+                    </p>
+
+                    <h4><span class="strong">Soma</span> os valores de todos os campos de
+                        uma determinada coluna:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT SUM</span> (nome da coluna)
+                        <span class="sql">FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT SUM</span> (preco)
+                        <span class="sql">FROM</span> league_of_legends;
+                    </p>
+
+                    <h4>Tira a <span class="strong">média</span> dos valores de uma
+                        determinada coluna:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT AVG</span> (nome da coluna)
+                        <span class="sql">FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT AVG</span> (preco)
+                        <span class="sql">FROM</span> league_of_legends;
+                    </p>
+
+                    <h4>Determina um <span class="strong">limite</span> de contagem de
+                        colunas:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">LIMIT</span> número do limite;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">LIMIT</span> 50;<br />
+                        No caso do exemplo ele irá retornar todos os dados da tabela da linha
+                        <span class="strong">1</span> até a linha
+                        <span class="strong">50</span>.
+                    </p>
+
+                    <h4>Além de determinar um limite para a contagem,
+                        podemos especificar em qual <span class="strong">linha</span>
+                        a contagem <span class="strong">começa</span>:
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">LIMIT</span> número do limite
+                        <span class="sql">OFFSET</span> número da linha inicial;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> *
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">LIMIT</span> 50
+                        <span class="sql">OFFSET</span> 20;<br />
+                        No caso do exemplo ele irá retornar todos os dados da tabela da linha
+                        <span class="strong">21</span> até a linha
+                        <span class="strong">70</span>.
+                    </p>
+
+                    <h4>Retorna o <span class="strong">valor mínimo</span> de uma
+                        determinada coluna:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT MIN</span> (nome da coluna)
+                        <span class="sql">FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT MIN</span> (preco)
+                        <span class="sql">FROM</span> league_of_legends;
+                    </p>
+
+                    <h4>Retorna o <span class="strong">valor máximo</span> de uma
+                        determinada coluna:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT MAX</span> (nome da coluna)
+                        <span class="sql">FROM</span> nome da tabela;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT MAX</span> (preco)
+                        <span class="sql">FROM</span> league_of_legends;
+                    </p>
+
+                    <h4><span class="strong">Ordena</span> os dados de uma determinada
+                        coluna (a forma padrão é <span class="strong">crescente</span>,
+                        não é necessário escrever o "ASC"):
+                    </h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome da coluna
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">ORDER BY</span>
+                        nome da coluna que você quer ordenar
+                        <span class="sql">ASC</span>;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> campeoes
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">ORDER BY</span> campeoes;
+                    </p>
+
+                    <h4><span class="strong">Ordena</span> os dados de uma determinada
+                        coluna de forma <span class="strong">decrescente</span>:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome da coluna
+                        <span class="sql">FROM</span>nome da tabela
+                        <span class="sql">ORDER BY</span>
+                        nome da coluna que você quer ordenar
+                        <span class="sql">DESC</span>;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> campeoes
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">ORDER BY</span> campeoes
+                        <span class="sql">DESC</span>;
+                    </p>
+
+                    <h4><span class="strong">Agrupa</span> os dados de uma determinada
+                        coluna:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome da coluna
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">GROUP BY</span> nome da coluna;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> rota
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">GROUP BY</span> rota;<br />
+                        Temos 5 valores da coluna "rota" em nossa tabela: "top", "mid", "adc", "sup"
+                        e "jg". No caso do exemplo ele irá retornar apenas uma coluna com o nome
+                        "rota" e os 5 valores em cada linha.
+                        <div class="importante">
+                            <span class="strong">Importante!</span> Toda coluna que
+                            selecionarmos (depois de SELECT) precisa ser agrupada 
+                            (depois de GROUP BY), se tivermos uma query do tipo:<br />
+                            <span class="sql">SELECT</span> rota, campeao
+                            <span class="sql">FROM</span> league_of_legends
+                            <span class="sql">GROUP BY</span> rota;<br />
+                            Isso retornará um erro, informando que a coluna "campeao" 
+                            também precisa seragrupada.
+                        </div>
+                    </p>
+
+                    <h4><span class="strong">Agrupa</span> e <span class="strong">conta</span> os
+                        dados de uma determinada
+                        coluna:</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT</span> nome da coluna,
+                        <span class="sql">COUNT(</span> nome da coluna
+                        <span class="sql">) FROM</span> nome da tabela
+                        <span class="sql">GROUP BY</span> nome da coluna;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT</span> rota,
+                        <span class="sql">COUNT(</span> rota
+                        <span class="sql">) FROM</span> league_of_legends
+                        <span class="sql">GROUP BY</span> rota;<br />
+                        Nesse caso ele irá retornar, além da coluna com o nome "rota" e os 5 valores
+                        em cada linha, uma segunda coluna com o nome "count" (podemos renomeá-la
+                        usando a palavra reservada <span class="strong">as</span>), com a
+                        contagem de linhas de cada valor da coluna "rota".
+                    </p>
+
+                    <h4>Retorna dados <span class="strong">distintos</span> de uma
+                        determinada coluna (o ORDER BY não seria necessário, ele apenas ordena os
+                        dados distintos que coletamos):</h4>
+                    <div class="perguntas-sql">
+                        <span class="sql">SELECT DISTINCT</span> nome da coluna
+                        <span class="sql">FROM</span> nome da tabela
+                        <span class="sql">ORDER BY</span> nome da coluna;
+                    </div>
+                    <p><strong>Exemplo:</strong>
+                        <span class="sql">SELECT DISTINCT</span> preco
+                        <span class="sql">FROM</span> league_of_legends
+                        <span class="sql">ORDER BY</span> preco;<br />
+                        Em nossa tabela "league_of_legends" temos diversos campeões com o mesmo
+                        preço. Ao usarmos DISTINCT, em vez de retornar uma tabela com várias linhas
+                        do mesmo preço, apareceria apenas uma linha de cada preço distinto.
+                    </p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>Informações importantes</h2>
-            </div>
+            <h2>Informações importantes</h2>
             <div class="card-conteudo">
-                <div class="informacoes-lado-a-lado">
-                    <li>Operadores Relacionais:
-                        <div class="operadores-relacionais">
-                            <ul>
-                                <li><span class="strong">&lt</span> - Menor que</li>
-                                <li><span class="strong">&gt</span> - Maior que</li>
-                                <li><span class="strong">&lt=</span> - Menor ou igual a</li>
-                                <li><span class="strong">&gt=</span> - Maior ou igual a</li>
-                                <li><span class="strong">=</span> - Igual a</li>
-                                <li><span class="strong">&lt&gt</span> - Diferente de</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>Tipos de dados:
-                        <div class="tipos-dados">
-                            <ul>
-                                <li><span class="strong">TEXT</span> - tipo textual, texto sem limites de
-                                    caracteres.</li>
-                                <li><span class="strong">VARCHAR(__)</span> - tipo textual, texto <strong>com
-                                        limite</strong> de caracteres, escreva o limite entre os parênteses.</li>
-                                <li><span class="strong">REAL</span> - tipo numérico, representa um número
-                                    real (pode ser tanto inteiro quanto decimal).</li>
-                                <li><span class="strong">INT</span> - tipo numérico, representa apenas números
-                                    reais <strong>inteiros</strong>.</li>
-                                <li><span class="strong">BOOLEAN</span> - tipo booleano, define se algo é
-                                    verdadeiro ou falso, escreva assim: <strong>true</strong> ou <strong>false</strong>.
-                                </li>
-                                <li><span class="strong">DATE</span> - tipo de data, apenas dia, mês e ano,
-                                    escreva assim: <strong>'YYYY-MM-DD'</strong>.</li>
-                                <li><span class="strong">TIMESTAMP</span> - tipo de data, com dia, mês e ano,
-                                    hora, minuto e segundo, escreva assim: <strong>'YYYY-MM-DD hh:mm:ss'</strong>.</li>
-                            </ul>
-                        </div>
-                    </li>
+                <div class="info">
+                    <div class="operadores-relacionais">
+                        <h3>Operadores Relacionais:</h3>
+                        <ul class="lista-com-margem">
+                            <li><span class="strong">&lt</span> - Menor que</li>
+                            <li><span class="strong">&gt</span> - Maior que</li>
+                            <li><span class="strong">&lt=</span> - Menor ou igual a</li>
+                            <li><span class="strong">&gt=</span> - Maior ou igual a</li>
+                            <li><span class="strong">=</span> - Igual a</li>
+                            <li><span class="strong">&lt&gt</span> - Diferente de</li>
+                        </ul>
+                    </div>
+
+                    <div class="tipos-dados">
+                        <h3>Tipos de dados:</h3>
+                        <ul class="lista-com-margem">
+                            <li><span class="strong">TEXT</span>
+                                - tipo textual, texto sem limites de caracteres.
+                            </li>
+                            <li><span class="strong">VARCHAR(__)</span>
+                                - tipo textual, texto <strong>com limite</strong>
+                                de caracteres, escreva o limite entre os parênteses.
+                            </li>
+                            <li><span class="strong">REAL</span>
+                                - tipo numérico, representa um número real
+                                (pode ser tanto inteiro quanto decimal).
+                            </li>
+                            <li><span class="strong">INT</span>
+                                - tipo numérico, representa apenas números reais
+                                <strong>inteiros</strong>.
+                            </li>
+                            <li><span class="strong">BOOLEAN</span>
+                                - tipo booleano, define se algo é verdadeiro ou falso,
+                                escreva assim: <strong>true</strong> ou <strong>false</strong>.
+                            </li>
+                            <li><span class="strong">DATE</span>
+                                - tipo de data, apenas dia, mês e ano, escreva assim:
+                                <strong>'YYYY-MM-DD'</strong>.
+                            </li>
+                            <li><span class="strong">TIMESTAMP</span>
+                                - tipo de data, com dia, mês e ano, hora, minuto e segundo,
+                                escreva assim: <strong>'YYYY-MM-DD hh:mm:ss'</strong>.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <h4>O valor padrão que utilizamos no banco de dados é em <span class="strong">centavos</span> (8
-                            reais = 800 centavos). Para retornar o valor
-                            em <span class="strong">reais</span> apenas dividimos por cem:</h4>
-                        <div class="perguntas-sql">
-                            <span class="sql">SELECT AVG(</span>
-                            nome da coluna</span>
-                            <span class="sql">)<span class="strong">/100</span> FROM</span>
-                            nome da tabela</span>;
-                        </div>
-                    </li>
-                    <br>
-                    <li>
-                        <h4>Porém o valor retornado quando dividimos por cem é do tipo <span
-                                class="strong">Numeric</span> (um número preciso, com muitas casas decimais -
-                            ver <a href="https://www.postgresql.org/docs/9.6/datatype-numeric.html"
-                                target="_blank">Documentação - PostgreSQL 9.6</a>). Para retornar o valor com apenas
-                            <span class="strong">duas casas decimais</span> usamos a palavra reservada
-                            <span class="strong">TRUNC</span>:
-                        </h4>
-                        <div class="perguntas-sql">
-                            <span class="sql">SELECT <span class="strong">TRUNC(</span>AVG(</span>
-                            nome da coluna</span>
-                            <span class="sql">)/100<span class="strong">, 2)</span> FROM</span>
-                            nome da tabela</span>;
-                        </div>
-                        <p><span class="strong">Importante!</span> Na fórmula TRUNC(_,_) o valor antes da
-                            vírgula é o dado que queremos, e depois da vírgula é a quantidade de casas decimais
-                            que queremos que apareça, não precisa ser necessariamente 2.</p>
-                    </li>
-                    <li>
-                        <h4>Para mudar o <span class="strong">tipo</span> de um dado, usamos a seguinte regra:
-                        </h4>
-                        <div class="perguntas-sql">
-                            <span class="sql">SELECT AVG(</span>
-                            nome da coluna</span>
-                            <span class="sql">)<span class="strong">::REAL</span> FROM</span>
-                            nome da tabela</span>;
-                        </div>
-                        <p>Essa mudança é comum quando temos números no formato de string (texto) e queremos fazer
-                            operações, ou colocá-los em ordem crescente/decrescente.</p>
-                    </li>
-                </ul>
+
+                <h4>O valor padrão que utilizamos no banco de dados é em
+                    <span class="strong">centavos</span> (8 reais = 800 centavos).
+                    Para retornar o valor em <span class="strong">reais</span> 
+                    apenas dividimos por cem:
+                </h4>
+                <div class="perguntas-sql">
+                    <span class="sql">SELECT AVG(</span> nome da coluna
+                    <span class="sql">)<span class="strong">/100</span> FROM</span>
+                    nome da tabela;
+                </div>
+
+                <h4>Porém o valor retornado quando dividimos por cem é do tipo
+                    <span class="strong">Numeric</span> (um número preciso, com muitas casas decimais -
+                    ver <a href="https://www.postgresql.org/docs/9.6/datatype-numeric.html" target="_blank">
+                        Documentação - PostgreSQL 9.6</a>). Para retornar o valor com apenas
+                    <span class="strong">duas casas decimais</span> usamos a palavra reservada
+                    <span class="strong">TRUNC</span>:
+                </h4>
+                <div class="perguntas-sql">
+                    <span class="sql">SELECT <span class="strong">TRUNC(</span>AVG(</span>
+                    nome da coluna
+                    <span class="sql">)/100<span class="strong">, 2)</span> FROM</span>
+                    nome da tabela;
+                </div>
+                <p><span class="strong">Importante!</span> Na fórmula TRUNC(_,_) o valor antes da
+                    vírgula é o dado que queremos, e depois da vírgula é a quantidade de casas decimais
+                    que queremos que apareça, não precisa ser necessariamente 2.
+                </p>
+
+                <h4>Para mudar o <span class="strong">tipo</span> de um dado,
+                    usamos a seguinte regra:
+                </h4>
+                <div class="perguntas-sql">
+                    <span class="sql">SELECT AVG(</span> nome da coluna
+                    <span class="sql">)<span class="strong">::REAL</span> FROM</span>
+                    nome da tabela;
+                </div>
+                <p>Essa mudança é comum quando temos números no formato de string (texto)
+                    e queremos fazer operações, ou colocá-los em ordem crescente/decrescente.
+                </p>
             </div>
         </div>
     </div>
 </body>
-
 </html>

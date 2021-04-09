@@ -9,6 +9,7 @@
 /* Edição Cabeçalho */
 .cabecalho {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding: 1em 2em;
@@ -18,7 +19,6 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    text-align: center;
 }
 .cabecalho a {
     padding: 0 1em;
@@ -38,6 +38,9 @@
     display: flex;
     align-items: center;
 }
+.titulo a img {
+    margin-right: 0.4em;
+}
 .navegacao {
     display: flex;
     align-items: center;
@@ -47,11 +50,14 @@
     display: flex;
     align-items: center;
 }
+.navegacao a img {
+    padding: 0.3em;
+}
 
 /* Edição Conteúdo */
 .conteudo {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     height: fit-content;
     margin: 0 auto;
 }
