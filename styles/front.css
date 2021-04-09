@@ -2,25 +2,22 @@
     box-sizing: border-box;
     font-family: 'Grandstander', cursive;
     margin: 0;
+    padding: 0;
 }
 
 /* Edição Cabeçalho */
 .cabecalho {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    min-width: 900px;
-    padding: 12px 24px;
+    width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 4em;
     background-color: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-    z-index: 100;
-    margin-bottom: 50px;
-}
-.cabecalho .titulo, .cabecalho .titulo a {
-    display: flex;
-    align-items: center;
+    z-index: 1;
+    text-align: center;
 }
 .cabecalho a {
     padding: 0 1em;
@@ -31,18 +28,23 @@
     color: #FE0078;
     text-decoration: underline;
 }
-.navegacao, .navegacao a {
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titulo a {
     display: flex;
     align-items: center;
 }
-.cabecalho .titulo a img, .cabecalho .navegacao a img {
+.navegacao {
     display: flex;
-    width: 70px;
-    height: 70px;
-    padding-right: 8px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.cabecalho h1, .cabecalho h3 {
-    padding-left: 6px;
+.navegacao a {
+    display: flex;
+    align-items: center;
 }
 
 /* Edição Conteúdo */
@@ -86,11 +88,9 @@
 .card .card-cabecalho {
     padding-bottom: 25px;
 }
-.card h3 {
-    padding-bottom: 10px;
+.card h2, .card h3 {
+    margin-bottom: 1em;
 }
-
-/* Edição Conteúdo-Card "O que Front-End faz" */
 .card-conteudo .pilares-web img {
     display: flex;
     width: fit-content;
@@ -107,8 +107,6 @@
 li {
     padding-bottom: 6px;
 }
-
-/* Edição Tabelas */
 table {
     border-collapse: collapse;
     width: fit-content;
@@ -124,8 +122,6 @@ td {
     text-align: center;
     padding: 10px;
 }
-
-/* Edição Conteúdo-Card "Elementos básicos para formulários no HTML" */
 .exemplo-de-codigo {
     display: block;
     background-color: #f7f7f7;

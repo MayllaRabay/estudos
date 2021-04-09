@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programação</title>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <div class="cabecalho">
         <div class="titulo">
             <a href="index.html">
-                <img alt="📚" aria-label="📚"
-                    src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4da.svg">
+                <img alt="📚" aria-label="📚" width="50px"
+                src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4da.svg">
                 <h1>Estudos Programação</h1>
             </a>
         </div>
+
         <div class="navegacao">
-            <a href="front.html">
-                <img alt="💻" aria-label="💻"
-                    src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4bb.svg">
+            <a href="pages/front.html">
+                <img alt="💻" aria-label="💻" width="55px"
+                src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4bb.svg">
                 <h3>Front-End</h3>
             </a>
-            <a href="back.html">
-                <img alt="💾" aria-label="💾"
-                    src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4be.svg">
+
+            <a href="pages/back.html">
+                <img alt="💾" aria-label="💾" width="55px"
+                src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4be.svg">
                 <h3>Back-End</h3>
             </a>
-            <a href="logic.html">
-                <img alt="🔢" aria-label="🔢"
-                    src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f522.svg">
+
+            <a href="pages/logic.html">
+                <img alt="🔢" aria-label="🔢" width="55px"
+                src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f522.svg">
                 <h3>Lógica De Programação</h3>
             </a>
         </div>
@@ -38,9 +41,7 @@
 
     <div class="conteudo">
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>Horários</h2>
-            </div>
+            <h2>Horários</h2>
             <div class="card-conteudo">
                 <table>
                     <tr>
@@ -61,7 +62,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <td style="background-color: rgba(206, 205, 202, 0.5)">Descanso</td>
                     </tr>
                     <tr>
                         <td>15h00 às 18h00</td>
@@ -71,48 +72,46 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <td style="background-color: rgba(206, 205, 202, 0.5)">Descanso</td>
                     </tr>
                     <tr>
-                        <td>18h30 às 21h30</td>
+                        <td>18h30 às 20h</td>
+                        <td style="background-color: rgba(103, 36, 222, 0.2)">Back-end</td>
+                        <td style="background-color: rgba(221, 0, 129, 0.2)">Soft Skills</td>
+                        <td style="background-color: rgba(221, 0, 129, 0.2)">Soft Skills</td>
+                        <td style="background-color: rgba(0, 120, 223, 0.2)">Front-end</td>
+                        <td style="background-color: rgba(233, 168, 0, 0.2)">Revisão</td>
                         <td></td>
+                        <td style="background-color: rgba(206, 205, 202, 0.5)">Descanso</td>
+                    </tr>
+                    <tr>
+                        <td>20h às 21h30</td>
+                        <td style="background-color: rgba(103, 36, 222, 0.2)">Back-end</td>
+                        <td style="background-color: rgba(0, 120, 223, 0.2)">Front-end</td>
+                        <td style="background-color: rgba(103, 36, 222, 0.2)">Back-end</td>
+                        <td style="background-color: rgba(0, 120, 223, 0.2)">Front-end</td>
+                        <td style="background-color: rgba(233, 168, 0, 0.2)">Revisão</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td style="background-color: rgba(206, 205, 202, 0.5)">Descanso</td>
                     </tr>
                 </table>
             </div>
             <div class="card-rodape">
-                <img src="images/star.png">
+                <img src="./images/star.png" alt="Uma estrela" width="50px">
                 <h3>Crie sua rotina de estudos! Foco que você vai longe ;)</h3>
-                <img src="images/star.png">
+                <img src="./images/star.png" alt="Uma estrela" width="50px">
             </div>
         </div>
 
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>Ferramentas</h2>
-            </div>
+            <h2>Ferramentas</h2>
             <div class="card-conteudo">
                 <ul>
-                    <li>
-                        <a href="https://repl.it/" target="_blank">Repl.it</a>
-                    </li>
-                    <li>
-                        <a href="http://sqlfiddle.com/" target="_blank">SQL Fiddle</a>
-                    </li>
-                    <li>
-                        <a href="https://codepen.io/" target="_blank">CodePen</a>
-                    </li>
-                    <li>
-                        <a href="https://www.db-fiddle.com/" target="_blank">DB Fiddle</a>
-                    </li>
-                    <li>
-                        <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
-                    </li>
+                    <li><a href="https://repl.it/" target="_blank">Repl.it</a></li>
+                    <li><a href="http://sqlfiddle.com/" target="_blank">SQL Fiddle</a></li>
+                    <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+                    <li><a href="https://www.db-fiddle.com/" target="_blank">DB Fiddle</a></li>
+                    <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
                 </ul>
             </div>
         </div>
