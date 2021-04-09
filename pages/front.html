@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-End</title>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="../styles/front.css">
 </head>
+
 <body>
     <div class="cabecalho">
         <div class="titulo">
-            <a href="index.html">
-                <img alt="📚" aria-label="📚"
+            <a href="../index.html">
+                <img alt="📚" aria-label="📚" width="50px"
                     src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4da.svg">
                 <h1>Estudos Programação</h1>
             </a>
         </div>
+
         <div class="navegacao">
             <a href="front.html">
-                <img alt="💻" aria-label="💻"
+                <img alt="💻" aria-label="💻" width="55px"
                     src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4bb.svg">
                 <h3>Front-End</h3>
             </a>
+
             <a href="back.html">
-                <img alt="💾" aria-label="💾"
+                <img alt="💾" aria-label="💾" width="55px"
                     src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4be.svg">
                 <h3>Back-End</h3>
             </a>
+
             <a href="logic.html">
-                <img alt="🔢" aria-label="🔢"
+                <img alt="🔢" aria-label="🔢" width="55px"
                     src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f522.svg">
                 <h3>Lógica De Programação</h3>
             </a>
@@ -37,38 +43,44 @@
 
     <div class="conteudo">
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>O que o Front-End faz?</h2>
-            </div>
+            <h2>O que o Front-End faz?</h2>
             <div class="card-conteudo">
                 <ul>
-                    <li>Lida diretamente com o <strong>usuário final</strong>, definindo como será sua interação com a interface do site;</li>
-                    <li>Cuida da <strong>regra de negócio</strong> (tanto front quanto back lidam com a regra de negócio, mas a maior parte fica por conta do back);</li>
-                        <ul>
-                            <li>Regra de negócio é uma lista de regras que dita o que, como, onde, quando e por que as coisas serão feitas;</li>
-                            <li>A regra define de que maneira o negócio será gerenciado, tornando-o viável, lucrativo e/ou funcional.</li>
-                        </ul>
-                    <li>Desenvolve o <strong>visual</strong> das páginas, aplicando cores, formas, fontes, estilos e animações;</li>
+                    <li>Lida diretamente com o <strong>usuário final</strong>, definindo como será sua interação com a
+                        interface do site;</li>
+                    <li>Cuida da <strong>regra de negócio</strong> (tanto front quanto back lidam com a regra de
+                        negócio, mas a maior parte fica por conta do back);</li>
+                    <ul class="lista-com-margem">
+                        <li>Regra de negócio é uma lista de regras que dita o que, como, onde, quando e por que as
+                            coisas serão feitas;</li>
+                        <li>A regra define de que maneira o negócio será gerenciado, tornando-o viável, lucrativo e/ou
+                            funcional.</li>
+                    </ul>
+                    <li>Desenvolve o <strong>visual</strong> das páginas, aplicando cores, formas, fontes, estilos e
+                        animações;</li>
                     <li>Tem seus códigos executados pelo <strong>navegador</strong>.</li>
                 </ul>
+
                 <div class="pilares-web">
-                    <img src="front.png">
+                    <img src="../images/front.png">
                     <div class="pilares-web-texto">
                         <h3>Pilares da Web</h3>
                         <ul>
-                            <li><span class="texto-importante">HTML:</span> conteúdo - HTML <strong>não é uma linguagem de programação</strong>, é uma <u>linguagem de marcação</u> usada para definir a estrutura de seu conteúdo.</li>
-                            <li><span class="texto-importante">CSS:</span> design - cuida de toda a estilização, é uma <u>linguagem de estilo</u>.</li>
-                            <li><span class="texto-importante">JS:</span> interações - torna sua página interativa e dinâmica, é uma <u>linguagem de script/programação</u>.</li>
+                            <li><span class="texto-importante">HTML:</span> conteúdo - HTML <strong>não é uma linguagem
+                                de programação</strong>, é uma <u>linguagem de marcação</u> usada para definir a
+                                estrutura de seu conteúdo.</li>
+                            <li><span class="texto-importante">CSS:</span> design - cuida de toda a estilização, é uma
+                                <u>linguagem de estilo</u>.</li>
+                            <li><span class="texto-importante">JS:</span> interações - torna sua página interativa e
+                                dinâmica, é uma <u>linguagem de script/programação</u>.</li>
                         </ul>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>Elementos HTML</h2>
-            </div>
+            <h2>Elementos HTML</h2>
             <div class="card-conteudo">
                 <table>
                     <tr>
@@ -81,79 +93,92 @@
                         <td style="color: blueviolet">strong</td>
                         <td>Estiliza texto como negrito</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td><span style="color: blueviolet">&ltstrong&gt</span> <strong>Negrito</strong> <span style="color: blueviolet">&lt/strong&gt</span></td>
+                        <td><span style="color: blueviolet">&ltstrong&gt</span> <strong>Negrito</strong> <span
+                                style="color: blueviolet">&lt/strong&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">em</td>
                         <td>Estiliza texto como itálico</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td><span style="color: blueviolet">&ltem&gt</span> <em>Itálico</em> <span style="color: blueviolet">&lt/em&gt</span></td>
+                        <td><span style="color: blueviolet">&ltem&gt</span> <em>Itálico</em> <span
+                                style="color: blueviolet">&lt/em&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">u</td>
                         <td>Sublinha o texto</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td><span style="color: blueviolet">&ltu&gt</span> <u>Texto sublinhado</u> <span style="color: blueviolet">&lt/u&gt</span></td>
+                        <td><span style="color: blueviolet">&ltu&gt</span> <u>Texto sublinhado</u> <span
+                                style="color: blueviolet">&lt/u&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">s</td>
                         <td>Corta o texto com um traço</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td><span style="color: blueviolet">&lts&gt</span> <s>Texto cortado</s> <span style="color: blueviolet">&lt/s&gt</span></td>
+                        <td><span style="color: blueviolet">&lts&gt</span> <s>Texto cortado</s> <span
+                                style="color: blueviolet">&lt/s&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">p</td>
                         <td>Delimita um parágrafo</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
-                        <td><span style="color: blueviolet">&ltp&gt</span> Um grande parágrafo <span style="color: blueviolet">&lt/p&gt</span></td>
+                        <td><span style="color: blueviolet">&ltp&gt</span> Um grande parágrafo <span
+                                style="color: blueviolet">&lt/p&gt</span></td>
                     </tr>
                     <tr>
-                        <td style="color: blueviolet">blockquote</td> 
+                        <td style="color: blueviolet">blockquote</td>
                         <td>Delimita uma citação</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
-                        <td><span style="color: blueviolet">&ltblockquote&gt</span> Penso logo existo - Réné Descartes <span style="color: blueviolet">&lt/blockquote&gt</span></td>
+                        <td><span style="color: blueviolet">&ltblockquote&gt</span> Penso logo existo - Réné Descartes
+                            <span style="color: blueviolet">&lt/blockquote&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">h1, h2, h3, h4, h5, h6</td>
                         <td>Delimita um cabeçalho, inicia uma nova seção</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
-                        <td><span style="color: blueviolet">&lth1&gt</span> Título da Página <span style="color: blueviolet">&lt/h1&gt</span></td>
+                        <td><span style="color: blueviolet">&lth1&gt</span> Título da Página <span
+                                style="color: blueviolet">&lt/h1&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">br</td>
                         <td>Pula linha</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td><span style="color: blueviolet">&ltbr&gt</span></td>
+                        <td><span style="color: blueviolet">&ltbr /&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">hr</td>
                         <td>Separa o conteúdo com uma linha horizontal</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
-                        <td><span style="color: blueviolet">&lthr&gt</span></td>
+                        <td><span style="color: blueviolet">&lthr /&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">div</td>
                         <td>Elemento block genérico</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
-                        <td><span style="color: blueviolet">&ltdiv&gt</span> Um bloco genérico <span style="color: blueviolet">&lt/div&gt</span></td>
+                        <td><span style="color: blueviolet">&ltdiv&gt</span> Um bloco genérico <span
+                                style="color: blueviolet">&lt/div&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">span</td>
                         <td>Elemento inline genérico</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td>&ltp&gt No meio de um parágrafo uma <span style="color: blueviolet">&ltspan&gt</span> palavra estilizada <span style="color: blueviolet">&lt/span&gt</span> &lt/p&gt</td>
+                        <td>&ltp&gt No meio de um parágrafo uma <span style="color: blueviolet">&ltspan&gt</span>
+                            palavra estilizada <span style="color: blueviolet">&lt/span&gt</span> &lt/p&gt</td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">img</td>
                         <td>Delimita uma imagem</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
-                        <td><span style="color: blueviolet">&ltimg src="</span>logo.png<span style="color: blueviolet">"&gt</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
+                        <td><span style="color: blueviolet">&ltimg src="</span>logo.png<span
+                                style="color: blueviolet">" /&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">a</td>
                         <td>Define um link</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
-                        <td><span style="color: blueviolet">&lta href="</span>https://google.com<span style="color: blueviolet">"&gt</span>Google<span style="color: blueviolet">&lt/a&gt</span></td>
+                        <td><span style="color: blueviolet">&lta href="</span>https://google.com<span
+                                style="color: blueviolet">"&gt</span>Google<span
+                                style="color: blueviolet">&lt/a&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">ol</td>
@@ -180,8 +205,10 @@
                         <td>Delimita um item da lista</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
                         <td>&ltul&gt<br>
-                            <span style="color: blueviolet;">&ltli&gt</span> Aqui está um item <span style="color: blueviolet;">&lt/li&gt</span><br>
-                            <span style="color: blueviolet;">&ltli&gt</span> Aqui está outro item <span style="color: blueviolet;">&lt/li&gt</span><br>
+                            <span style="color: blueviolet;">&ltli&gt</span> Aqui está um item <span
+                                style="color: blueviolet;">&lt/li&gt</span><br>
+                            <span style="color: blueviolet;">&ltli&gt</span> Aqui está outro item <span
+                                style="color: blueviolet;">&lt/li&gt</span><br>
                             &lt/ul&gt
                         </td>
                     </tr>
@@ -190,7 +217,7 @@
                         <td>Delimita uma tabela</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
                         <td><span style="color: blueviolet;">&lttable&gt</span><br>
-                            &lttr&gt<br> 
+                            &lttr&gt<br>
                             &lttd&gt &lt/td&gt<br>
                             &lt/tr&gt<br>
                             <span style="color: blueviolet">&lt/table&gt</span>
@@ -201,7 +228,7 @@
                         <td>Delimita uma <strong>linha</strong> da tabela</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
                         <td>&lttable&gt<br>
-                            <span style="color: blueviolet;">&lttr&gt</span><br> 
+                            <span style="color: blueviolet;">&lttr&gt</span><br>
                             &lttd&gt &lt/td&gt<br>
                             <span style="color: blueviolet;">&lt/tr&gt</span><br>
                             &lt/table&gt
@@ -210,9 +237,10 @@
                     <tr>
                         <td style="color: blueviolet">td</td>
                         <td>Delimita uma <strong>célula</strong> da tabela</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
                         <td>&lttable&gt<br>
-                            &lttr&gt<br> 
+                            &lttr&gt<br>
                             <span style="color: blueviolet;">&lttd&gt &lt/td&gt</span><br>
                             &lt/tr&gt<br>
                             &lt/table&gt
@@ -221,16 +249,18 @@
                     <tr>
                         <td style="color: blueviolet">link</td>
                         <td>Define uma relação entre dois documentos. Usado para linkar o CSS ao HTML</td>
-                        <td><span style="background-color: rgba(206, 205, 202, 0.5)" class="tipo-html">invisível</span></td>
-                        <td><span style="color: blueviolet">&ltlink rel="</span>stylesheet<span style="color: blueviolet">" href="</span>estilo.css<span style="color: blueviolet">"&gt</span></td>
+                        <td><span style="background-color: rgba(206, 205, 202, 0.5)" class="tipo-html">invisível</span>
+                        </td>
+                        <td><span style="color: blueviolet">&ltlink rel="</span>stylesheet<span
+                                style="color: blueviolet">" href="</span>estilo.css<span
+                                style="color: blueviolet">"&gt</span></td>
                     </tr>
                 </table>
             </div>
         </div>
+
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>Propriedades CSS</h2>
-            </div>
+            <h2>Propriedades CSS</h2>
             <div class="card-conteudo">
                 <table>
                     <tr>
@@ -254,7 +284,8 @@
                     <tr>
                         <td class="texto-importante">font-size</td>
                         <td>Muda o tamanho da fonte</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>font-size: 12px;</td>
                     </tr>
                     <tr>
@@ -263,7 +294,8 @@
                         <td><span style="background-color: rgba(140, 46, 0, 0.2)" class="valor-css">número puro</span>
                             <span style="background-color: rgba(245, 93, 0, 0.2)" class="valor-css">bold</span>
                             <span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">normal</span>
-                            <span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">light</span></td>
+                            <span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">light</span>
+                        </td>
                         <td>font-weight: bold;</td>
                     </tr>
                     <tr>
@@ -271,13 +303,15 @@
                         <td>Muda o estilo da fonte</td>
                         <td><span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">normal</span>
                             <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">italic</span>
-                            <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">oblique</span></td>
+                            <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">oblique</span>
+                        </td>
                         <td>font-style: italic;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">font-family</td>
                         <td>Muda a fonte</td>
-                        <td><span style="background-color: rgba(206, 205, 202, 0.5)" class="valor-css">nome da fonte</span></td>
+                        <td><span style="background-color: rgba(206, 205, 202, 0.5)" class="valor-css">nome da
+                                fonte</span></td>
                         <td>font-family: 'Verdana';</td>
                     </tr>
                     <tr>
@@ -286,7 +320,8 @@
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">left</span>
                             <span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">right</span>
                             <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">center</span>
-                            <span style="background-color: rgba(140, 46, 0, 0.2)" class="valor-css">justify</span></td>
+                            <span style="background-color: rgba(140, 46, 0, 0.2)" class="valor-css">justify</span>
+                        </td>
                         <td>text-align: center;</td>
                     </tr>
                     <tr>
@@ -296,91 +331,103 @@
                             <span style="background-color: rgba(245, 93, 0, 0.2)" class="valor-css">underline</span>
                             <span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">dotted</span>
                             <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">line-through</span>
-                            <span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">cor</span></td>
+                            <span style="background-color: rgba(233, 168, 0, 0.2)" class="valor-css">cor</span>
+                        </td>
                         <td>text-decoration: underline;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">line-height</td>
                         <td>Configura o espaçamento entre <strong>linhas</strong></td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>line-height: 1.5em;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">word-spacing</td>
                         <td>Configura o espaçamento entre <strong>palavras</strong></td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>word-spacing: 5px;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">letter-spacing</td>
                         <td>Configura o espaçamento entre <strong>letras</strong></td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>letter-spacing: 2px;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">padding</td>
                         <td>Configura o espaçamento <strong>interno</strong> de um elemento</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>padding: 16px;<br>
                             padding: 1em;<br></td>
                     </tr>
                     <tr>
                         <td class="texto-importante">margin</td>
                         <td>Configura o espaçamento <strong>externo</strong> de um elemento</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>margin: 16px 32px;<br>
                             margin: 1em 2em;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">border</td>
                         <td>Cria uma borda ao redor do elemento e configura sua largura, estilo e cor</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>border: 1px solid lightgrey;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">border-radius</td>
                         <td>Configura o arredondamento da borda</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>border-radius: 4px;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">width</td>
                         <td>Configura a <strong>largura</strong> de um elemento</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>width: 300px;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">height</td>
                         <td>Configura a <strong>altura</strong> de um elemento</td>
-                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span></td>
+                        <td><span style="background-color: rgba(103, 36, 222, 0.2)" class="valor-css">comprimento</span>
+                        </td>
                         <td>height: 700px;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">object-fit</td>
-                        <td>Determina como o elemento irá se comportar dentro de seu espaço delimitado (<strong>content box</strong>)</td>
+                        <td>Determina como o elemento irá se comportar dentro de seu espaço delimitado (<strong>content
+                                box</strong>)</td>
                         <td><span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">contain</span>
                             <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">cover</span>
                             <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">fill</span>
-                            <span style="background-color: rgba(206, 205, 202, 0.5)" class="valor-css">none</span></td>
+                            <span style="background-color: rgba(206, 205, 202, 0.5)" class="valor-css">none</span>
+                        </td>
                         <td>object-fit: contain;</td>
                     </tr>
                     <tr>
                         <td class="texto-importante">object-position</td>
-                        <td>Determina em qual região o elemento terá <strong>foco</strong> quando seu tamanho é modificado pelo tamanho da página</td>
+                        <td>Determina em qual região o elemento terá <strong>foco</strong> quando seu tamanho é
+                            modificado pelo tamanho da página</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="valor-css">bottom</span>
                             <span style="background-color: rgba(0, 120, 223, 0.2)" class="valor-css">center</span>
                             <span style="background-color: rgba(0, 135, 107, 0.2)" class="valor-css">left</span>
                             <span style="background-color: rgba(221, 0, 129, 0.2)" class="valor-css">right</span>
-                            <span style="background-color: rgba(140, 46, 0, 0.2)" class="valor-css">top</span></td>
+                            <span style="background-color: rgba(140, 46, 0, 0.2)" class="valor-css">top</span>
+                        </td>
                         <td>object-position: center;</td>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="card">
-            <div class="card-cabecalho">
-                <h2>Elementos básicos para formulários no HTML</h2>
-            </div>
+            <h2>Elementos básicos para formulários no HTML</h2>
             <div class="card-conteudo">
                 <table>
                     <tr>
@@ -393,79 +440,94 @@
                         <td style="color: blueviolet">form</td>
                         <td>Delimita um formulário</td>
                         <td><span style="background-color: rgba(0, 135, 107, 0.2)" class="tipo-html">block</span></td>
-                        <td><span style="color: blueviolet">&ltform&gt</span> Todos os outros elementos estarão aqui dentro <span style="color: blueviolet">&lt/form&gt</span></td>
+                        <td><span style="color: blueviolet">&ltform&gt</span> Todos os outros elementos estarão aqui
+                            dentro <span style="color: blueviolet">&lt/form&gt</span></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">label</td>
                         <td>Dita a legenda de um campo de formulário</td>
                         <td><span style="background-color: rgba(245, 93, 0, 0.2)" class="tipo-html">inline</span></td>
                         <td><label>
-                            <span style="color: blueviolet">Aqui está a legenda para o input abaixo</span> <input>
-                        </label></td>
+                                <span style="color: blueviolet">Aqui está a legenda para o input abaixo</span> <input>
+                            </label></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">input</td>
                         <td>Cria um campo de formulário (apenas uma linha), seja ele de texto, número, data, etc</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
                         <td><input placeholder="Apenas uma linha hein" style="color: blueviolet"></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">select</td>
                         <td>Cria um campo de formulário que permite escolher entre opções</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
                         <td>Isso é um &ltselect&gt vazio <select></select></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">option</td>
                         <td>Define uma opção de valor para um &ltselect&gt</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
                         <td>Opa, agora temos opções <select>
-                            <option></option>
-                            <option>DC</option>
-                            <option>Marvel</option>
-                        </select></td>
+                                <option></option>
+                                <option>DC</option>
+                                <option>Marvel</option>
+                            </select></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">textarea</td>
                         <td>Cria um campo de formulário de texto longo, com mais de uma linha</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
-                        <td><textarea placeholder="Digite aqui o livro do Senhor dos Anéis" style="color: blueviolet"></textarea></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
+                        <td><textarea placeholder="Digite aqui o livro do Senhor dos Anéis"
+                                style="color: blueviolet"></textarea></td>
                     </tr>
                     <tr>
                         <td style="color: blueviolet">button</td>
                         <td>Delimita um botão</td>
-                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span></td>
+                        <td><span style="background-color: rgba(233, 168, 0, 0.2)" class="tipo-html">inline-block</span>
+                        </td>
                         <td><button>Sou apenas um botão, não clique</button></td>
                     </tr>
                 </table>
-                <br>
+
                 <h3>Código no HTML:</h3>
                 <div class="exemplo-de-codigo">
 <pre>
 <span style="color:blueviolet;">&ltform&gt</span>
-    <span style="color:blueviolet;">&ltlabel&gt</span>
-        <span style="color: darkgrey">Se inscreva na nossa newsletter</span>
-        <span style="color:blueviolet;">&ltinput name="<span style="color: darkgrey">email</span>" placeholder="<span style="color: darkgrey">Escreva aqui seu e-mail</span>"&gt</span>
+
+    <span style="color:blueviolet;">&ltlabel for="<span style="color: #cb927d">email</span>" &gt</span>
+        <span style="color: darkgrey">Inscreva-se na nossa newsletter</span>
     <span style="color:blueviolet;">&lt/label&gt</span>
-    <span style="color:blueviolet;">&ltbutton&gt</span>
+
+    <span style="color:blueviolet;">&ltinput id="<span style="color: #cb927d">email</span>" type="<span style="color: #cb927d">email</span>" placeholder="<span style="color: #cb927d">Escreva aqui seu e-mail</span>" /&gt</span>
+
+    <span style="color:blueviolet;">&ltbutton type="<span style="color: #cb927d">submit</span>" &gt</span>
         <span style="color: darkgrey">Enviar</span>
     <span style="color:blueviolet;">&lt/button&gt</span>
+
 <span style="color:blueviolet;">&lt/form&gt</span>
-</pre>                   
+</pre>
                 </div>
+
                 <h3>Como ficaria na web:</h3>
                 <div class="exemplo-de-codigo">
                     <form>
                         <label>
-                            Se inscreva na nossa newsletter
+                            Inscreva-se na nossa newsletter
                             <input name="email" placeholder="Escreva aqui seu e-mail">
                         </label>
-                        <button>
+                        <button type="button">
                             Enviar
                         </button>
                     </form>
                 </div>
-                <a href="https://mayllarabay.github.io/exercicio_formulario/" target="_blank"><h3>Exercícios para praticar!</h3></a>
+
+                <a href="https://mayllarabay.github.io/exercicio_formulario/" target="_blank">
+                    <h3>Exercícios para praticar!</h3>
+                </a>
             </div>
         </div>
     </div>

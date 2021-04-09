@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Grandstander', cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+}
+
+/* Edição Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 4em;
+    background-color: white;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.cabecalho a {
+    padding: 0 1em;
+    color: #545454;
+    text-decoration: none;
+}
+.cabecalho a:hover {
+    color: #FE0078;
+    text-decoration: underline;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titulo a {
+    display: flex;
+    align-items: center;
+}
+.titulo a img {
+    margin-right: 0.4em;
+}
+.navegacao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navegacao a {
+    display: flex;
+    align-items: center;
+}
+.navegacao a img {
+    padding: 0.3em;
+}
+
+/* Edição Conteúdo */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    height: fit-content;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 0 auto 50px auto;
+    padding: 2em;
+}
+h2 {
+    margin-bottom: 1em;
+}
+h3 {
+    margin: 1em 0;
+}
+h4 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+h5 {
+    margin: 0.5em 0 1em 0;
+}
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+li {
+    margin: 0.5em 0;
+}
+.strong {
+    color:blueviolet;
+    font-weight: bold;
+}
+.lista-com-margem {
+    margin-left: 1.5em;
+}
+
+/* Edição Imagens - Card "Introdução à Ciência da Programação" */
+.img-bits img {
+    display: block;
+    margin: 1em auto;
+    width: 60%;
+    height: 60%;
+}
+.img-binario img {
+    display: block;
+    margin: 1em auto;
+    width: 40%;
+    height: 45%;
+}
+.img-linguagens img {
+    display: block;
+    margin: 1em auto;
+    width: 55%;
+    height: 55%;
+}
+.img-logica img {
+    display: block;
+    margin: 2em auto;
+    width: 75%;
+}
+
+/* Edição Card "Introdução ao JavaScript" */
+.introducao-js {
+    display: flex;
+    align-items: center;
+}
+.introducao-js img {
+    margin-top: -1.5em;
+    margin-left: 1em;
+    height: 60px;
+    width: 60px;
+}
+.js {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 1em 2em;
+    margin: 1em 0;
+}
+.js-cor {
+    color: blueviolet
+}
+.codigo {
+    color: darkgray;
+}
+.exemplo img {
+    height: 25px;
+    width: 28px;
+}

@@ -2,25 +2,23 @@
     box-sizing: border-box;
     font-family: 'Grandstander', cursive;
     margin: 0;
+    padding: 0;
+    line-height: 1.2em;
 }
 
 /* Edição Cabeçalho */
 .cabecalho {
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    min-width: 900px;
-    padding: 12px 24px;
+    width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 4em;
     background-color: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-    z-index: 100;
-    margin-bottom: 50px;
-}
-.cabecalho .titulo, .cabecalho .titulo a {
-    display: flex;
-    align-items: center;
+    z-index: 1;
 }
 .cabecalho a {
     padding: 0 1em;
@@ -31,18 +29,29 @@
     color: #FE0078;
     text-decoration: underline;
 }
-.navegacao, .navegacao a {
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titulo a {
     display: flex;
     align-items: center;
 }
-.cabecalho .titulo a img, .cabecalho .navegacao a img {
-    display: flex;
-    width: 70px;
-    height: 70px;
-    padding-right: 8px;
+.titulo a img {
+    margin-right: 0.4em;
 }
-.cabecalho h1, .cabecalho h3 {
-    padding-left: 6px;
+.navegacao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navegacao a {
+    display: flex;
+    align-items: center;
+}
+.navegacao a img {
+    padding: 0.3em;
 }
 
 /* Edição Conteúdo */
@@ -73,10 +82,9 @@
 /* Edição Conteúdo-Cards */
 .card {
     display: flex;
+    flex-flow: column wrap;
     height: fit-content;
-    max-width: 70%;
-    min-width: 900px;
-    flex-direction: column;
+    max-width: 900px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -86,32 +94,32 @@
 .card .card-cabecalho {
     padding-bottom: 25px;
 }
-.card h3 {
-    padding-bottom: 10px;
+.card h2 {
+    margin-bottom: 1em;
 }
-
-/* Edição Conteúdo-Card "O que Front-End faz" */
-.card-conteudo .pilares-web img {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    padding-right: 40px;
+.card h3 {
+    margin: 1em 0 0.5em 0;
+}
+.lista-com-margem {
+    margin-left: 1.5em;
 }
 .pilares-web {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
+}
+.pilares-web img {
+    object-fit: contain;
+    object-position: center;
+    padding-right: 40px;
 }
 li {
     padding-bottom: 6px;
 }
-
-/* Edição Tabelas */
 table {
     border-collapse: collapse;
-    width: fit-content;
 }
 tr:first-child {
     font-weight: bold;
@@ -124,8 +132,6 @@ td {
     text-align: center;
     padding: 10px;
 }
-
-/* Edição Conteúdo-Card "Elementos básicos para formulários no HTML" */
 .exemplo-de-codigo {
     display: block;
     background-color: #f7f7f7;

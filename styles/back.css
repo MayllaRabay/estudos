@@ -2,25 +2,23 @@
     box-sizing: border-box;
     font-family: 'Grandstander', cursive;
     margin: 0;
+    padding: 0;
+    line-height: 1.2em;
 }
 
 /* Edição Cabeçalho */
 .cabecalho {
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    min-width: 900px;
-    padding: 12px 24px;
+    width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 4em;
     background-color: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-    z-index: 100;
-    margin-bottom: 50px;
-}
-.cabecalho .titulo, .cabecalho .titulo a {
-    display: flex;
-    align-items: center;
+    z-index: 1;
 }
 .cabecalho a {
     padding: 0 1em;
@@ -31,18 +29,30 @@
     color: #FE0078;
     text-decoration: underline;
 }
-.navegacao, .navegacao a {
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titulo a {
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+}
+.titulo a img {
+    margin-right: 0.4em;
+}
+.navegacao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navegacao a {
     display: flex;
     align-items: center;
 }
-.cabecalho .titulo a img, .cabecalho .navegacao a img {
-    display: flex;
-    width: 70px;
-    height: 70px;
-    padding-right: 8px;
-}
-.cabecalho h1, .cabecalho h3 {
-    padding-left: 6px;
+.navegacao a img {
+    padding: 0.3em;
 }
 
 /* Edição Conteúdo */
@@ -51,27 +61,26 @@
     flex-direction: column;
     align-items: center;
 }
-.texto-importante {
+.strong {
     color:blueviolet;
     font-weight: bold;
 }
+.importante {
+    font-size: 14px;
+}
+.lista-com-margem {
+    margin-left: 1.5em;
+}
+h2, hr {
+    margin-bottom: 1em;
+}
 h4 {
-    padding-bottom: 3px;
-}
-h5 {
-    padding:5px 0 30px 0;
-}
-hr {
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-li {
-    padding-bottom: 5px;
+    margin-top: 2em;
 }
 p {
     font-size: 14px;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 /* Edição Conteúdo-Cards */
@@ -120,11 +129,15 @@ p {
 .perguntas-sql {
     display: block;
     background-color: #f7f7f7;
-    padding: 16px 30px;
+    color: darkgrey;
+    padding: 1em 2em;
+}
+.sql {
+    color: #a71d5d;
 }
 
 /* Edição Conteúdo-Card "Informações Importantes" */
-.informacoes-lado-a-lado {
+.info {
     display: flex;
     justify-content: space-between;
     padding-bottom: 35px;
