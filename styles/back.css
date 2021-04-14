@@ -61,16 +61,6 @@
     flex-direction: column;
     align-items: center;
 }
-.strong {
-    color:blueviolet;
-    font-weight: bold;
-}
-.importante {
-    font-size: 14px;
-}
-.lista-com-margem {
-    margin-left: 1.5em;
-}
 h2, hr {
     margin-bottom: 1em;
 }
@@ -82,8 +72,6 @@ p {
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-
-/* Edição Conteúdo-Cards */
 .card {
     display: flex;
     height: fit-content;
@@ -102,6 +90,16 @@ p {
 .card .card-cabecalho, .card h3 {
     padding-bottom: 25px;
 }
+.strong-cor {
+    color:blueviolet;
+    font-weight: bold;
+}
+.importante {
+    font-size: 14px;
+}
+.lista-com-margem {
+    margin-left: 1.5em;
+}
 
 /* Edição Conteúdo-Card "O que é Back-end" */
 .card-conteudo-back {
@@ -113,16 +111,16 @@ p {
     flex-direction: column;
     padding-right: 30px;
 }
+.conteudo-parte-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+}
 .banco-dados img {
     display: flex;
     width: 100%;
     height: 100%;
     padding-top: 45px;
-}
-.conteudo-parte-2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: -70px;
 }
 
 /* Edição Conteúdo-Card "Linguagem SQL" */
@@ -132,7 +130,7 @@ p {
     color: darkgrey;
     padding: 1em 2em;
 }
-.sql {
+.sql-cor {
     color: #a71d5d;
 }
 

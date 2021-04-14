@@ -3,7 +3,7 @@
     font-family: 'Grandstander', cursive;
     margin: 0;
     padding: 0;
-    line-height: 1.2em;
+    line-height: 1.3em;
 }
 
 /* Edição Cabeçalho */
@@ -91,7 +91,7 @@ hr {
 li {
     margin: 0.5em 0;
 }
-.strong {
+.strong-cor {
     color:blueviolet;
     font-weight: bold;
 }
@@ -135,19 +135,21 @@ li {
     height: 60px;
     width: 60px;
 }
-.js {
+.codigo {
     display: block;
     background-color: #f7f7f7;
     padding: 1em 2em;
-    margin: 1em 0;
+    margin: 1em;
 }
-.js-cor {
-    color: blueviolet
-}
-.codigo {
+.js {
     color: darkgray;
 }
-.exemplo img {
-    height: 25px;
-    width: 28px;
+.js-cor {
+    color: blueviolet;
+}
+.exemplo {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin: 0.3em 1em 1em 1em;
 }
