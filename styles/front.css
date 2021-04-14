@@ -78,6 +78,10 @@
     border-radius: 4px;
     margin-bottom: 4px;
 }
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
 
 /* Edição Conteúdo-Cards */
 .card {
@@ -99,6 +103,9 @@
 }
 .card h3 {
     margin: 1em 0 0.5em 0;
+}
+.card p {
+    margin-bottom: 1em;
 }
 .lista-com-margem {
     margin-left: 1.5em;
@@ -132,9 +139,32 @@ td {
     text-align: center;
     padding: 0.5em;
 }
-.exemplo-de-codigo {
+.codigo {
     display: block;
     background-color: #f7f7f7;
     padding: 1em 2em;
     margin-bottom: 1em;
+}
+.codigo-pre {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.txt-cor {
+    color: blueviolet;
+}
+.txt-cor-2 {
+    color: #FE0078;
+    font-weight: bold;
+}
+.link-exercicio a {
+    color: #545454;
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+}
+.link-exercicio a:hover {
+    color: #FE0078;
+    text-decoration: underline;
 }

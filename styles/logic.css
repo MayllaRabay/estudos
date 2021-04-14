@@ -91,7 +91,7 @@ hr {
 li {
     margin: 0.5em 0;
 }
-.strong {
+.strong-cor {
     color:blueviolet;
     font-weight: bold;
 }
@@ -145,7 +145,7 @@ li {
     color: darkgray;
 }
 .js-cor {
-    color: blueviolet
+    color: blueviolet;
 }
 .exemplo {
     display: block;
